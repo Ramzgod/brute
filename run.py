@@ -49,7 +49,7 @@ console = Console()
 ses=requests.Session()
 id,id2,loop,ok,cp,akun,oprek,lisensiku,tokenku,uid,lisensikuni,method,pwpluss,pwnya= [],[],0,0,0,[],[],[],[],[],[],[],[],[]
 ugen2,ugen,dia,cokbrut,dump,memek,ualu,ualuh,lisensikuni,lisensiku,princp=[],[],[],[],[],[],[],[],[],[],[]
-sys.stdout.write('\x1b]2; BMBF | BrayennnXD Multi Brute Facebook\x07')
+sys.stdout.write('\x1b]2; XMBF | Xyzon Multi Brute Facebook\x07')
 #------------------[ USER-AGENT ]-------------------#
 try:
 	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
@@ -140,15 +140,15 @@ def back():
 	login()
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
-	cetak(panel(f"""[bold green]               _  _ _   _ ___  ____ _  _
-[bold green]                \/   \_/    /  |  | |\ | 
-[bold green]               _/\_   |    /__ |__| | \|                                                                                                    
-             """,width=90,padding=(0,8),title=f"Banner",style=f"bold white"))
+	cetak(panel(f"""[bold green]                    _  _ _   _ ___  ____ _  _
+[bold green]                     \/   \_/    /  |  | |\ | 
+[bold green]                    _/\_   |    /__ |__| | \|                                                                                                    
+             """,width=90,padding=(0,8),title=f"LOGO",style=f"bold white"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login123():
 	os.system('clear')
 	banner()
-	cetak(panel(f"[[bold green]01[bold white]] [bold cyan]Login Menggunakan Cookie [bold white][[bold green] ON [bold white]]         [[bold green]03[bold white]] [bold cyan]Tutorial Ambil Cookie [bold white][[bold green] ON [bold white]]\n[[bold green]02[bold white]] [bold cyan]Doa Sebelum Crack [bold white][[bold green] ON [bold white]]               [[bold green]04[bold white]] [bold cyan]Cek Hasil Crack [bold white][[bold green] ON [bold white]]",width=90,title=f"[bold green]Menu Bot",padding=(0,2),style=f"bold white"))
+	cetak(panel(f"[[bold green]01[bold white]] [bold cyan]Login Menggunakan Cookie [bold white][[bold green] ON [bold white]]        [[bold green]03[bold white]] [bold cyan]Tutorial Ambil Cookie [bold white][[bold green] ON [bold white]]\n[[bold green]02[bold white]] [bold cyan]Doa Sebelum Crack [bold white][[bold green] ON [bold white]]               [[bold green]04[bold white]] [bold cyan]Cek Hasil Crack [bold white][[bold green] ON [bold white]]",width=90,title=f"[bold green]Menu Bot",padding=(0,2),style=f"bold white"))
 	vevek = input(f' {P}[{H}+{P}]\33[1;96m Pilih Menu : {P}')
 	if vevek in ['1','01']:
 		laknatxyzonlogincakculaynabuynabuykaktabuykaktabuybyxyzondisinivevekkudadimariketemupepekkudajanganlarislebewindonesiaandlampungnihbossenggoldongnantimatiawokawokawokaowkawokawokawokawok()

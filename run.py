@@ -485,7 +485,7 @@ def menu(my_name,my_id):
 	elif _____xyzon___xd____ in('0','00'):
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')
-		print(f'[+]{m} Sukses Logout{x}')
+		print(f' [+]{m} Sukses Logout{x}')
 		time.sleep(5)
 		login()
 	else:
@@ -518,7 +518,7 @@ def process_data1():
 	
 def spam_sms():
 	global nomor 
-	cetak(panel(f'''  \33[1;96mMasukan Nomor Target Yang Ingin Di Spam Contoh : +6281234567xxx''',width=90,padding=(0,8),style=f"bold white"))
+	cetak(panel(f'''  [bold cyan]Masukan Nomor Target Yang Ingin Di Spam Contoh : +6281234567xxx''',width=90,padding=(0,8),style=f"bold white"))
 	nomor = input(f" {P}[{H}+{P}]\33[1;96m Input No Hp : {P}+62").replace("+62","")
 	if nomor == "":
 		pass
@@ -880,7 +880,7 @@ class sxp_sms:
     
 def spam_wa():
 	global nomor
-	cetak(panel(f''' \33[1;96m  Masukan Nomor Target Yang Ingin Di Spam Contoh : +6281234567xxx''',width=90,padding=(0,8),style=f"bold white"))
+	cetak(panel(f''' [bold cyan]  Masukan Nomor Target Yang Ingin Di Spam Contoh : +6281234567xxx''',width=90,padding=(0,8),style=f"bold white"))
 	nomor = input(f" {P}[{H}+{P}]\33[1;96m Input No Hp : {P}+62").replace("+62","")
 	if nomor == "":
 		pass
@@ -2044,7 +2044,7 @@ def mengecek(user,pw):
 			elif "Masukkan Kode Masuk untuk Melanjutkan" in re.findall("\<title>(.*?)<\/title>",str(response)):
 				print("\r%s \33[1;91mAkun Terpasang Autentikasi Dua Faktor			"%(M))
 			else:
-				print("%s [+]%s\33[1;91mTerjadi Kesalahan"%(M,til))
+				print("%s%s\33[1;91mTerjadi Kesalahan"%(M,til))
 		else:
 			if "c_user" in session.cookies.get_dict():
 				print("\r%s%s \33[1;96mSelamat Akun Anda Tidak Checkpoint Silahkan Masuk Lewat FB🥳🥳 "%(H))

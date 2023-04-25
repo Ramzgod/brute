@@ -268,9 +268,9 @@ def back():
 	login()
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
-	cetak(panel(f"""[bold green]                       _  _ _   _ ___  ____ _  _
-[bold green]                        \/   \_/    /  |  | |\ | 
-[bold green]                       _/\_   |    /__ |__| | \|                                                                                                    
+	cetak(panel(f"""[bold green]                  _  _ _   _ ___  ____ _  _    _  _ ___  
+[bold green]                    \/   \_/    /  |  | |\ | __  \/  |  \ 
+[bold green]                   _/\_   |    /__ |__| | \|    _/\_ |__/ 
              """,width=90,padding=(0,8),title=f"LOGO",style=f"bold white"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login123():
@@ -1320,7 +1320,7 @@ def setting():
 	    method.append('colmek2')
 	else:
 		method.append('validate1')
-	cetak(panel('''[bold white][[bold cyan]01[bold white]] [bold cyan]Menggunakan Password V1 [[bold green]Recommended[bold white]]
+	cetak(panel('''[bold white][[bold white]01[bold white]] [bold cyan]Menggunakan Password V1 [[bold green]Recommended[bold white]]
 [bold white][[bold green]02[bold white]] [bold cyan]Menggunakan Password V2 [[bold green]Very Recommended[bold white]]
 [bold white][[bold green]03[bold white]] [bold cyan]Menggunakan Password Manual [[bold red]Not Recommended[bold white]]''',style='bold white',title='[bold green]Setting Password',padding=(0,8),width=90))
 	pwplus=input(f' {P}[{H}+{P}] \33[1;96mPilih Sandi : {P}')
@@ -1334,7 +1334,7 @@ def setting():
 		pwpluss.append('no')
 	
 	cetak(panel(f'      [bold cyan]Apakah Anda Ingin Menampilkan Aplikasi Yang Terkait Di Dalam Akun ? Y/T',width=90,title=f"[bold green]Setting Cek Apk",style=f"bold white"))
-	_brayen_ = input(' [+] {P}Pilih : ')
+	_brayen_ = input(' [+] \33[1;96mPilih : ')
 	if _brayen_ in ['']:
 		print(' [+] \33[1;91mPilih Yang Bener Kontol ')
 		back()

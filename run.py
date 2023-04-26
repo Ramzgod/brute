@@ -274,7 +274,7 @@ def banner():
              """,width=90,padding=(0,8),title=f"LOGO",style=f"bold white"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def vevek():
-	cetak(panel(f" {P}[{H}+{P}][bold cyan] Hallo Cuy Gw [bold cyan]XyzonXD [bold cyan]Gw Di Sini Selaku Author Disini Untuk Menggunakan Script Ini Sebaik Mungkin Dan Jangan Di salah Gunakan Yakan Awokawokawok  Dan Jangan Di Buat Prem Ya Adik² Terimakasih \n {P}[{H}+{P}][bold cyan] Thanks To All",width=90,padding=(0,2),style=f"bold white"))
+	cetak(panel(f" [bold white][[bold green]+[bold white]][bold cyan] Hallo Cuy Gw [bold cyan]XyzonXD [bold cyan]Gw Di Sini Selaku Author Disini Untuk Menggunakan Script Ini Sebaik Mungkin Dan Jangan Di salah Gunakan Yakan Awokawokawok  Dan Jangan Di Buat Prem Ya Adik² Terimakasih \n [bold white][[bold green]+[bold white]][bold cyan] Thanks To All",width=90,padding=(0,2),style=f"bold white"))
 	time.sleep(10)
 	login()
 	

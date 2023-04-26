@@ -1,55 +1,55 @@
-#------------------[ IMPORT MODULE ]-------------------#
-import requests,bs4,json,os,sys,random,datetime,time,re,urllib3,rich,base64
-from time import sleep
-from rich import pretty
-from rich.tree import Tree
-from rich.panel import Panel
-from rich import print as cetak
+#-----------------[MODUL IMPOR]-------------------#
+permintaan impor, bs4, json, os, sys, acak, datetime, waktu, kembali, urllib3, kaya, base64
+dari waktu mengimpor tidur
+dari import kaya cantik
+dari rich.tree mengimpor Pohon
+dari panel impor rich.panel
+dari cetak impor kaya seperti cetak
 from rich import print as rprint
-from rich import print as prints
-from rich.progress import track
-from rich.text import Text as tekz
-from rich.console import Console
-from rich.columns import Columns
-from rich.panel import Panel as nel
-from rich.panel import Panel as panel
-from bs4 import BeautifulSoup as sop
-from bs4 import BeautifulSoup as par
-from rich.console import Group as gp
-from bs4 import BeautifulSoup as parser
-from rich.columns import Columns as col
-from rich.console import Console as sol
-from rich.markdown import Markdown as mark
-from concurrent.futures import ThreadPoolExecutor as tred
-from concurrent.futures import ThreadPoolExecutor as BrayennnXD 
-from rich.progress import Progress,SpinnerColumn,BarColumn,TextColumn
-#------------------[  MODULE  ]-------------------#
-try:
-        import rich
-except ImportError:
-        cetak(nel('\t• Sedang Menginstall Modul Rich •'))
-        os.system('pip install rich')
-try:
-        import stdiomask
-except ImportError:
+dari cetak impor kaya sebagai cetakan
+dari trek impor rich.progress
+dari rich.text impor Teks sebagai tekz
+dari konsol impor rich.console
+dari rich.columns mengimpor Kolom
+dari rich.panel impor Panel sebagai nel
+dari rich.panel impor Panel sebagai panel
+dari bs4 impor BeautifulSoup sebagai sop
+from bs4 impor BeautifulSoup sebagai par
+dari rich.console import Group sebagai gp
+from bs4 impor BeautifulSoup sebagai parser
+dari rich.columns mengimpor Kolom sebagai kolom
+dari rich.console impor Konsol sebagai sol
+dari rich.markdown impor Penurunan harga sebagai mark
+from concurrent.futures mengimpor ThreadPoolExecutor sebagai tred
+dari concurrent.futures mengimpor ThreadPoolExecutor sebagai BrayennnXD
+dari rich.progress mengimpor Progress,SpinnerColumn,BarColumn,TextColumn
+#-----------------[MODUL]-------------------#
+mencoba:
+        impor kaya
+kecuali ImportError:
+        cetak(nel('\t• Sedang Menginstall Modul Kaya •'))
+        os.system('pip instal kaya')
+mencoba:
+        impor stdiomask
+kecuali ImportError:
         cetak(nel('\t• Sedang Menginstall Modul Stdiomask •'))
         os.system('pip install stdiomask')
-try:
-	import requests
-except ImportError:
-	cetak(nel('\t• Sedang Menginstall Modul Requests •'))
-	os.system('pip install requests && pip install mechanize ')
-#------------------[ GLOBAL NAME ]-------------------#
-pretty.install()
+mencoba:
+	permintaan impor
+kecuali ImportError:
+	cetak(nel('\t• Permintaan Modul Sedang Menginstall •'))
+	os.system('pip install request && pip install mechanize')
+#-----------------[ NAMA GLOBAL ]-------------------#
+cantik.install()
 CON=sol()
-wa = Console()
-taplikasi=[]
+wa = Konsol()
+aplikasi=[]
 gabriel=[]
-console = Console()
-ses=requests.Session()
-id,id2,loop,ok,cp,akun,oprek,lisensiku,tokenku,uid,lisensikuni,method,pwpluss,pwnya= [],[],0,0,0,[],[],[],[],[],[],[],[],[]
-ugen2,ugen,dia,cokbrut,dump,memek,ualu,ualuh,lisensikuni,lisensiku,princp=[],[],[],[],[],[],[],[],[],[],[]
-sys.stdout.write('\x1b]2; XMBF | Xyzon Multi Brute Facebook\x07')
+konsol = konsol()
+ses=permintaan.Sesi()
+id,id2,loop,ok,cp,akun,oprek,lisensiku,tokenku,uid,lisensikuni,method,pwpluss,pwnya= [],[],0,0,0,[],[],[],[ ],[],[],[],[],[]
+ugen2,ugen,dia,cokbrut,dump,memek,ualu,ualuh,lisensikuni,lisensiku,princp=[],[],[],[],[],[],[],[],[],[ ],[]
+sys.stdout.write('\x1b]2; BMBF | BrayennnXD Multi Brute Facebook\x07')
 #------------------[ AGEN PENGGUNA ]-------------------#
 mencoba:
 	prox= request.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text

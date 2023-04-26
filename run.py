@@ -21,7 +21,7 @@ from rich.columns import Columns as col
 from rich.console import Console as sol
 from rich.markdown import Markdown as mark
 from concurrent.futures import ThreadPoolExecutor as tred
-from concurrent.futures import ThreadPoolExecutor as BrayennnXD 
+from concurrent.futures import ThreadPoolExecutor as XyzonXD 
 from rich.progress import Progress,SpinnerColumn,BarColumn,TextColumn
 #------------------[  MODULE  ]-------------------#
 try:
@@ -1388,6 +1388,7 @@ def passwrd():
 					if len(frs)<3:
 						pass
 					else:
+
 						pwv.append(nmf)
 						pwv.append(frs+'01')
 						pwv.append(frs+'02')
@@ -1410,12 +1411,16 @@ def passwrd():
 						pwv.append(frs+'cantik')
 						pwv.append('memek')
 						pwv.append('sayang')
+
 				else:
+
 					if len(frs)<3:
+
 						pwv.append(nmf)
+
 					else:
+
 						pwv.append(nmf)
-						pwv.append(frs+'1')
 						pwv.append(frs+'01')
 						pwv.append(frs+'02')
 						pwv.append(frs+'03')

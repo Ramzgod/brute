@@ -60,7 +60,7 @@ try:
 	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
 	open('.prox.txt','w').write(prox)
 except Exception as e:
-sys.stdout.write('\x1b]2; XMBF | Xyzon Multi Brute Facebook\x07')
+	print('[\x1b[1;92m•\x1b[1;97m] [\x1b[1;96mXyzon-XD')
 prox=open('.prox.txt','r').read().splitlines()
 ###----------[ GENERATE USERAGENT ]---------- ###
 for xd in range(10000) :

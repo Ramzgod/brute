@@ -418,6 +418,7 @@ def menu(my_name,my_id):
 		result()
 	elif _____xyzon___xd____ in('99','099'):
 		LoginCuyy()
+		loginCookie()
 	elif _____xyzon___xd____ in('8','08'):
 		file_cp()
 	elif _____xyzon___xd____ in('9','09'):

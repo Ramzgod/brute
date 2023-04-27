@@ -267,7 +267,7 @@ def clear():
 def back():
 	login()
 #------------------[ LOGO-LAKNAT ]-----------------#
-def banner():
+def logo():
 	cetak(panel(f"""[bold green]                 _  _ _   _ ___  ____ _  _    _  _ ___  
 [bold green]                  \/   \_/    /  |  | |\ | __  \/  |  \ 
 [bold green]                 _/\_   |    /__ |__| | \|    _/\_ |__/ 
@@ -280,7 +280,7 @@ def vevek():
 	
 def login123():
 	os.system('clear')
-	banner()
+	logo()
 	cetak(panel(f"[[bold green]01[bold white]] [bold cyan]Login Menggunakan Cookie [bold white][[bold green] ON [bold white]]        [[bold green]03[bold white]] [bold cyan]Tutorial Ambil Cookie [bold white][[bold green] ON [bold white]]\n[[bold green]02[bold white]] [bold cyan]Doa Sebelum Crack [bold white][[bold green] ON [bold white]]               [[bold green]04[bold white]] [bold cyan]Cek Hasil Crack [bold white][[bold green] ON [bold white]]",width=90,title=f"[bold green]Menu Bot",padding=(0,2),style=f"bold white"))
 	cetak(panel(f'[bold cyan]Anda Wajib Login Menggunakan Cookies Untuk Unlock Semua Fitur Spesial Yang Ada Di Script Ini [bold green]By XyzonXD',width=90,title=f"[bold green]Informasi",style=f"bold white"))
 	vevek = input(f' {P}[{H}+{P}]\33[1;96m Pilih Menu : {P}')
@@ -392,7 +392,7 @@ def menu(my_name,my_id):
 		time.sleep(5)
 		login()
 	os.system('clear')
-	banner()
+	logo()
 	ip = requests.get("https://api.ipify.org").text
 	pengguna = requests.get('https://api.countapi.xyz/hit/Brayen/visits').json()["value"]	
 	dia.append(panel(f'[bold white][[bold green]+[/][bold white]][/] [bold cyan] Username : [bold green]{my_name}[/]\n[bold white][[bold green]+[/][bold white]][/]  [bold cyan]User Idz : [bold green]{my_id}[/]\n[bold white][[bold green]+[/][bold white]][/]  [bold cyan]User Ip  : [bold green]{ip}[/][/]\n[bold white][[bold green]+[/][bold white]][/]  [bold cyan]User Sc  : [bold green]{pengguna}[/][/] ',width=43,padding=(0,3),style=f"bold white"))
@@ -418,6 +418,8 @@ def menu(my_name,my_id):
 		result()
 	elif _____xyzon___xd____ in('99','099'):
 		loginkontol()
+	elif _____xyzon___xd____ in('37','020'):
+		tema()
 	elif _____xyzon___xd____ in('8','08'):
 		file_cp()
 	elif _____xyzon___xd____ in('9','09'):

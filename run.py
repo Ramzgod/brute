@@ -1,12 +1,13 @@
 #------------------[ INFO AUTHOR ]-------------------#
 
-#Halo Perkenalkan Saya XyzonXD Saya Adalah Perecode Andal
+#Halo Perkenalkan Saya XyzonXD Saya Yang Telah Membuat Script Ini
 
-#Thanks To : BintangTzy , XyzonXD
+#Thanks To : BintangTzy , XyzonXD , BrayennnXD , Alvino , Dapunta , YayanXD 
 #Version Tools : 2.1
 #Terakhir Update : 27 APRIL 2023
 #Author Tools : XyzonXD
 #Name Tools : XMBF (Xyzon Multi Brute Facebook)
+#Peringatan : Jangan Di Ubah Lagi Sc Nya Udah Enak
 #Info Update : Metode , Tampilan , User Agent And Tambahan Fitur 
 
 #Thanks To All From BintangTzy
@@ -84,6 +85,8 @@ try:
 	open('.prox.txt','w').write(prox)
 except Exception as e:
 	print('[\x1b[1;92m•\x1b[1;97m] \x1b[1;96mLu Kagak Ada paket anjirt sihlakan beli paket di sugeng kalo mau carck')
+	print('[\x1b[1;92m•\x1b[1;97m] \x1b[1;96mBtw Lu Miskin Yak Beli Paket Aja Kagak Mampu Awokawokawokawok')
+	print('[\x1b[1;92m•\x1b[1;97m] \x1b[1;96mSalam Dari BintangTzy And XyzonXD ')
 prox=open('.prox.txt','r').read().splitlines()
 ###----------[ GENERATE USERAGENT ]---------- ###
 for xd in range(10000) :

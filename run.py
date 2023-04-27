@@ -2924,7 +2924,7 @@ def loginCookie():
             user=open('data/.username','w').write(us)
             time.sleep(6)
             prints(Panel(f"{P2}    Login Akun Tumbal Berhasil, Silahkan Jalankan Ulang Scriptnya",width=100,padding=(0,7),style=f"{color_table}"));exit()
-            os.system('xdg-open https://www.facebook.com/');back()
+            os.system('xdg-open https://www.facebook.com/');exit()
         ex,user=cekAPI(kuki)
         cookie={'cookie':kuki}
         instagram(ex,user,cookie).menu()

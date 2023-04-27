@@ -271,6 +271,15 @@ bln = dic[(str(datetime.datetime.now().month))]
 thn = datetime.datetime.now().year
 okc = 'OK-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
+#------------------[ WAKTU ]-------------------#
+def waktu():
+	now = datetime.now()
+	hours = now.hour
+	if 4 <= hours < 10:timenow = "Selamat Pagi"
+	elif 10 <= hours < 15:timenow = "Selamat Siang"
+	elif 15 <= hours < 18:timenow = "Selamat Sore"
+	else:timenow = "Selamat Malam"
+	return timenow
 #------------------[ MACHINE-SUPPORT ]---------------#
 def alvino_xy(u):
         for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.005)
@@ -283,7 +292,7 @@ def logo():
 	cetak(panel(f"""[bold green]                 _  _ _   _ ___  ____ _  _    _  _ ___  
 [bold green]                  \/   \_/    /  |  | |\ | __  \/  |  \ 
 [bold green]                 _/\_   |    /__ |__| | \|    _/\_ |__/ 
-             """,width=90,padding=(0,8),title=f"LOGO",style=f"bold white"))
+             """,width=90,padding=(0,8),title=f"(waktu)",style=f"bold white"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login123():
 	os.system('clear')
@@ -423,10 +432,6 @@ def menu(my_name,my_id):
 		crack_email()
 	elif _____xyzon___xd____ in('7','07'):
 		result()
-	elif _____xyzon___xd____ in('99','099'):
-		loginkontol()
-	elif _____xyzon___xd____ in('37','020'):
-		tema()
 	elif _____xyzon___xd____ in('8','08'):
 		file_cp()
 	elif _____xyzon___xd____ in('9','09'):

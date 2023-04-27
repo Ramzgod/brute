@@ -2684,14 +2684,14 @@ def hasil_igehh():
 {J}║══[ {K}Kata Sandi {M}> {K}{pwd}{C}
 {J}║══[ {K}Pengikut {M}> {K}{fol}{C}
 {J}╚══[ {K}Mengikuti {M}> {K}{ful}{C}
-			""");jeda(0,05)
+			""")
 		kalau tidak:
 			print(f"""{J}╔══[ {H}Berhasil                      
 {J}║══[ {H}Nama Pengguna {M}> {H}{usr}{C}
 {J}║══[ {H}Kata Sandi {M}> {H}{pwd}{C}
 {J}║══[ {H}Pengikut {M}> {H}{fol}{C}
 {J}╚══[ {H}Mengikuti {M}> {H}{ful}{C}
-			""");jeda(0,05)
+			""")
 
 #-------------------------------------------------#
 #---{ CRACK INSTAGRAM }---#

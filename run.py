@@ -1,11 +1,11 @@
 #------------------[ INFO AUTHOR ]-------------------#
 
-#Halo Perkenalkan Saya XyzonXD Saya Yang Telah Membuat Script Ini
+#Halo Perkenalkan Saya XyzonXD Saya Yang Telah Merecode Script Ini
 
 #Thanks To : BintangTzy , XyzonXD , BrayennnXD , Alvino , Dapunta , YayanXD 
 #Version Tools : 2.1
 #Terakhir Update : 27 APRIL 2023
-#Author Tools : XyzonXD
+#Author Tools : Alvino
 #Name Tools : XMBF (Xyzon Multi Brute Facebook)
 #Peringatan : Jangan Di Ubah Lagi Sc Nya Udah Enak
 #Info Update : Metode , Tampilan , User Agent And Tambahan Fitur 
@@ -58,11 +58,12 @@ CON=sol()
 wa = Console()
 taplikasi=[]
 gabriel=[]
+BrayennnXD=[]
 console = Console()
 ses=requests.Session()
 id,id2,loop,ok,cp,akun,oprek,lisensiku,tokenku,uid,lisensikuni,method,pwpluss,pwnya= [],[],0,0,0,[],[],[],[],[],[],[],[],[]
 ugen2,ugen,dia,cokbrut,dump,memek,ualu,ualuh,lisensikuni,lisensiku,princp=[],[],[],[],[],[],[],[],[],[],[]
-sys.stdout.write('\x1b]2; XMBF | XyzonXD Multi Brute Facebook\x07')
+sys.stdout.write('\x1b]2; XMBF | Kontol Multi Brute Facebook\x07')
 #------------------[ USER-AGENT ]-------------------#
 uman,usman1=[],[]
 pretty.install()
@@ -272,6 +273,7 @@ dic2 = {'01':'January','02':'February','03':'March','04':'April','05':'May','06'
 tgl = datetime.datetime.now().day
 bln = dic[(str(datetime.datetime.now().month))]
 thn = datetime.datetime.now().year
+Brayenn=[]
 okc = 'OK-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 #------------------[ WAKTU ]-------------------#
@@ -413,10 +415,9 @@ def menu(my_name,my_id):
 	os.system('clear')
 	logo()
 	ip = requests.get("https://api.ipify.org").text
-	pengguna = requests.get('https://api.countapi.xyz/hit/Brayen/visits').json()["value"]	
-	dia.append(panel(f'[bold white][[bold green]+[/][bold white]][/] [bold cyan] Username : [bold green]{my_name}[/]\n[bold white][[bold green]+[/][bold white]][/]  [bold cyan]User Idz : [bold green]{my_id}[/]\n[bold white][[bold green]+[/][bold white]][/]  [bold cyan]User Ip  : [bold green]{ip}[/][/]\n[bold white][[bold green]+[/][bold white]][/]  [bold cyan]User Sc  : [bold green]{pengguna}[/][/] ',width=43,padding=(0,3),style=f"bold white"))
-	dia.append(panel(f'[bold white][[bold green]+[/][bold white]][/]  [bold cyan]Author : [bold green]BintangTzy[/]\n[bold white][[bold green]+[/][bold white]][/]  [bold cyan]Recode : [bold green]XyzonXD[/]\n[bold white][[bold green]+[/][bold white]][/]  [bold cyan]Versi  : [bold green]2.1[/][/]\n[bold white][[bold green]+[/][bold white]][/]  [bold cyan]Status : [bold green]Premium[/][/] ',width=44,padding=(0,3),style=f"bold white"))
-	console.print(Columns(dia))
+	Brayenn.append(panel(f'[bold white][[bold green]+[/][bold white]][/] [bold cyan] Username : [bold green]{my_name}[/]\n[bold white][[bold green]+[/][bold white]][/]  [bold cyan]User Idz : [bold green]{my_id}[/]\n[bold white][[bold green]+[/][bold white]][/]  [bold cyan]User Ip  : [bold green]{ip}[/][/]\n[bold white][[bold green]+[/][bold white]][/]  [bold cyan]User Sc  : [bold green]9999999[/][/] ',width=43,padding=(0,3),style=f"bold white"))
+	Brayenn.append(panel(f'[bold white][[bold green]+[/][bold white]][/]  [bold cyan]Author : [bold green]Alvino[/]\n[bold white][[bold green]+[/][bold white]][/]  [bold cyan]Recode : [bold green]XyzonXD[/]\n[bold white][[bold green]+[/][bold white]][/]  [bold cyan]Versi  : [bold green]2.1[/][/]\n[bold white][[bold green]+[/][bold white]][/]  [bold cyan]Status : [bold green]Premium[/][/] ',width=44,padding=(0,3),style=f"bold white"))
+	console.print(Columns(Brayenn))
 	cetak(panel(f'[bold cyan]Terima Kasih Kepada [bold green]BintangTzy[bold cyan] Yang Telah Membuat Script Ini, XyzonXD Multi Brute Facebook',width=90,style=f"bold white"))
 	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold cyan]Crack Publick  [bold white][[bold green] ON [bold white]][/]                [bold white][[bold green]07[/][bold white]][/] [bold cyan]Cek Hasil Crack [bold white][[bold green] ON [bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold cyan]Crack Massal [bold white][[bold green] ON [bold white]]                  [bold white][[bold green]08[/][bold white]][/] [bold cyan]Cek Hasil CP [bold white][[bold green] ON [bold white]]\n[bold white][[bold green]03[/][bold white]][/] [bold cyan]Crack Username [bold white][[bold green] ON [bold white]]                [bold white][[bold green]09[/][bold white]][/] [bold cyan]Spam Whatsapp [bold white][[bold green] ON [bold white]]\n[bold white][[bold green]04[/][bold white]][/] [bold cyan]Crack Grup [bold white][[bold green] ON [bold white]][/]                    [bold white][[bold green]10[/][bold white]][/] [bold cyan]Spam Sms [bold white][[bold green] ON [bold white]]\n[bold white][[bold green]05[/][bold white]][/] [bold cyan]Crack Followers [bold white][[bold green] ON [bold white]]               [bold white][[bold green]11[/][bold white]][/] [bold cyan]Report Bug [bold white][[bold green] ON [bold white]]\n[bold white][[bold green]06[/][bold white]][/] [bold cyan]Crack Email [bold white][[bold green] ON [bold white]]                   [bold white][[bold red]00[/][bold white]][/] [bold red]Hapus Cookies [bold white][[bold green] ON [bold white]][/]',width=90,title=f"[bold green]List Menu",padding=(0,8),style=f"bold white"))
 	cetak(panel(f'[bold Red]    Warning[bold cyan] Gunakan Script Ini Dengan Baik Jangan Di Salah Gunakan [bold green]By XyzonXD',width=90,title=f"[bold green]Informasi Crack",style=f"bold white"))
@@ -463,8 +464,8 @@ def error():
 	back() 
 #-------------------[ DOA HALAL ]-----------------------#
 def doa_halal():
-	cetak(nel(f'''{H2}[{K2}+{H2}] {H2}Versi Arab Stay Halal : [bold cyan]  لَّهُمَّ إِنِّيْ ظَلَمْتُ نَفْسِيْ ظُلْمًا كَثِيْرًا، وَلاَ يَغْفِرُ الذُّنُوْبَ إِلاَّ أَنْتَ، فَاغْفِرْ لِيْ مَغْفِرَةً مِنْ عِنْدِكَ، وَارْحَمْنِيْ، إِنَّكَ أَنْتَ الْغَفُوْرُ الرَّحِيْمُ
-{H2}[{K2}+{H2}] {H2}Versi Latin Stay Halal : [bold cyan]Allaahumma innii zholamtu nafsi zhulman katsiiron, wa laa yaghfirudz-dzunuuba illaa anta, faghfir lii maghfirotan min 'indika, warhamni, innaka antal ghofuurur-rahim''',title=f'{P2} {H2}[ {K2}Doa Sebelum Crack {H2}]',subtitle_align='center',padding=1,style='bold white'))
+	cetak(nel(f'''[+] {H2}Versi Arab Stay Halal : [bold cyan]  لَّهُمَّ إِنِّيْ ظَلَمْتُ نَفْسِيْ ظُلْمًا كَثِيْرًا، وَلاَ يَغْفِرُ الذُّنُوْبَ إِلاَّ أَنْتَ، فَاغْفِرْ لِيْ مَغْفِرَةً مِنْ عِنْدِكَ، وَارْحَمْنِيْ، إِنَّكَ أَنْتَ الْغَفُوْرُ الرَّحِيْمُ
+[+] Versi Latin Stay Halal : [bold cyan]Allaahumma innii zholamtu nafsi zhulman katsiiron, wa laa yaghfirudz-dzunuuba illaa anta, faghfir lii maghfirotan min 'indika, warhamni, innaka antal ghofuurur-rahim''',title=f'[ Doa Sebelum Crack ]',subtitle_align='center',padding=1,style='bold white'))
 #------------------[ DEFF SPAM SMS ]-------------------#
 
 agent = random.choice(

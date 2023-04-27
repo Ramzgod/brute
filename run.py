@@ -417,7 +417,7 @@ def menu(my_name,my_id):
 	elif _____xyzon___xd____ in('7','07'):
 		result()
 	elif _____xyzon___xd____ in('99','099'):
-		instagram()
+		LoginCuyy()
 	elif _____xyzon___xd____ in('8','08'):
 		file_cp()
 	elif _____xyzon___xd____ in('9','09'):
@@ -2891,8 +2891,7 @@ def LoginCuyy():
         instagram(ex,user,cookie).menu()
     else:
         lisensi()
-#------------------[ LOGIN COOKIES ]-------------------#
-def loginCookie():
+#------------------[ LOGIN COOKIES ]-----------------#
     if "sukses" in lisensiku:
         try:
             kuki=open('data/.kukis.log','r').read()
@@ -2981,7 +2980,7 @@ class instagramAPI:
 C = ''
 
 #------------------[ MENU TOOLS ]-------------------#
-def instagram():
+class instagram:
 	def __init__(self,external,username,cookie):
 		self.ext=external
 		self.username=username

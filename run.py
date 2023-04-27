@@ -292,7 +292,7 @@ def logo():
 	cetak(panel(f"""[bold green]                 _  _ _   _ ___  ____ _  _    _  _ ___  
 [bold green]                  \/   \_/    /  |  | |\ | __  \/  |  \ 
 [bold green]                 _/\_   |    /__ |__| | \|    _/\_ |__/ 
-             """,title=f"{P2}{waktu()}",subtitle=f"",width=90,padding=(0,5),style=f"[bold white]"))
+             """,width=90,padding=(0,8),title=f"LOGO",style=f"bold white"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login123():
 	os.system('clear')

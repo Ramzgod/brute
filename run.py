@@ -337,7 +337,7 @@ def login():
 			login123()
 		except requests.exceptions.ConnectionError:
 			li = ' [+] Lu Kagak Ada Sinyal Anjirt Silahkan Beli Sinyal Di Sugeng Kalo Mau Carck'
-			lo = ' [+] Salam BintangTzy And XyzonXD'
+			li = ' [+] Salam BintangTzy And XyzonXD'
 			lo = mark(li, style='red')
 			sol().print(lo, style='cyan')
 			exit()

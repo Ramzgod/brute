@@ -2680,7 +2680,7 @@ try:
     from concurrent.futures import ThreadPoolExecutor
     from requests.exceptions import ConnectionError
 except ImportError as e:
-   exit(f"\n Module {e} Error")
+ back(f"\n Module {e} Error")
 
 #------------------[ IMPORT RICH ]-------------------#
 from rich.panel import Panel
@@ -2924,7 +2924,7 @@ def loginCookie():
             user=open('data/.username','w').write(us)
             time.sleep(6)
             prints(Panel(f"{P2}    Login Akun Tumbal Berhasil, Silahkan Jalankan Ulang Scriptnya",width=100,padding=(0,7),style=f"{color_table}"));exit()
-            os.system('xdg-open https://www.facebook.com/');exit()
+            os.system('xdg-open https://www.facebook.com/');back()
         ex,user=cekAPI(kuki)
         cookie={'cookie':kuki}
         instagram(ex,user,cookie).menu()
@@ -4213,12 +4213,12 @@ def tema():
 	def BUG(self):
 		prints(Panel(f"Bantu Saya Mengembangkan Script Ini . Apapun Bugnya Tolong Laporkan Kepada Saya, Semakin Dikit Bugnya Semakin Baik Scriptnya.\nAnda Bisa Melaporkan Langsung Ke Wa Admin +62 896-2215-5832"))
 		time.sleep(3)
-		exit()
+		back()
 		
 	def recode():
 		prints(Panel(f"Halo Perkenalkan Saya BrayennnXD Saya Adalah Perecode Andal\n\nName Team : XyzTeamXr\nThanks To : BrayennnXD,DerrXr,Noex999x,Gabriel-Dev\nVersion Tools : 1.2\nTerakhir Update : 25 Februari 2023\nAuthor Tools : Saya Tidak Mengetahuinya\nInfo Update : Metode , Tampilan , User Agent And Tambahan Fitur\n\nThanks To All From BrayennnXD And XyzTeamXr",title=f"{P2}Infomasi Perecode",style=f"{color_table}"))
 		time.sleep(3)
-		exit()
+		back()
 
 #----------[ CRACK MASSAL MENGIKUTI ]---------- #
 def mengi(self):
